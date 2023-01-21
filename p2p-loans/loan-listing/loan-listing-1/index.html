@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#100420" />
+
+  <!-- Primary Meta Tags -->
+  <title>Loan Listing | P2P Loans — SentFi</title>
+  <meta name="title" content="SentFi — The Anti-Scam and Anti-Rugpull Defi Platform" />
+  <meta name="description"
+    content="SentFI is a  platform, that protects web3 users from scams and supports personal and business loans, p2p commerce, NFT insurance & anti-rug pull for NFT investors." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sentfi.xyz/" />
+  <meta property="og:title" content="SentFi — The Anti-Scam and Anti-Rugpull Defi Platform" />
+  <meta property="og:description"
+    content="SentFI is a  platform, that protects web3 users from scams and supports personal and business loans, p2p commerce, NFT insurance & anti-rug pull for NFT investors." />
+  <meta property="og:image" content="https://i.ibb.co/nwQP5rY/image.png" />
+  <meta property="og:site_name" content="SentFi" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://sentfi.xyz/" />
+  <meta property="twitter:title" content="SentFi — The Anti-Scam and Anti-Rugpull Defi Platform" />
+  <meta property="twitter:description"
+    content="SentFI is a  platform, that protects web3 users from scams and supports personal and business loans, p2p commerce, NFT insurance & anti-rug pull for NFT investors." />
+  <meta property="twitter:image" content="https://i.ibb.co/nwQP5rY/image.png" />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/spacing.css" />
+
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/d778668bce.js" crossorigin="anonymous" defer></script>
+
+  <!-- Scripts -->
+  <script src="/assets/js/imageSwitch.js" defer></script>
+  <script src="/assets/js/modal.js" defer></script>
+  <script src="/assets/js/dropdown.js" defer></script>
+  <script src="/assets/js/faviconChange.js" defer></script>
+  <script src="/assets/js/sidebar-toggle.js" defer></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-56BGZFVWJM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-56BGZFVWJM');
+  </script>
+</head>
+
+<body class="page-with-sidebar">
+  <div class="get-loan-container">
+    <header>
+      <!-- navbar -->
+      <nav class="top-nav px-4">
+        <div class="header__logo">
+          <button class="hamburger" id="sidebar-toggle-btn" title="Toggle Sidebar">
+            &#9776;
+          </button>
+          <a href="/">
+            <img src="/assets/images/logo.svg" alt="SentFi logo" />
+          </a>
+        </div>
+        <div class="header__search relative">
+          <input type="text" placeholder="Search for collections" />
+          <button type="submit">
+            <img src="/assets/images/search.svg" alt="Search icon" />
+          </button>
+        </div>
+        <div class="header__cta">
+          <a href="#" data-modal-target="#connect-wallet-modal" class="dropdown-btn" role="button">
+            <img src="/assets/images/wallet.svg" alt="img" />
+            <span class="text">Connect Wallet</span>
+          </a>
+        </div>
+      </nav>
+      <!-- navbar -->
+    </header>
+    <!-- sidebar -->
+    <aside class="sidebar px-4 py-5" id="sidebar">
+      <ul class="sidebar__items-container">
+        <!-- Sidebar Item -->
+        <li class="sidebar__item mt-0">
+          <button type="button" class="dropdown-btn">
+            <img src="/assets/images/box.svg" alt="box" class="sidebar__icon" />
+            Transactions
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </button>
+          <div class="dropdown">
+            <ul>
+              <li class="mb-3">
+                <a> Marketplace </a>
+              </li>
+              <li class="mb-3">
+                <a> Escrow </a>
+              </li>
+              <li>
+                <a> Orders </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <a href="javascript:" class="dropdown-btn">
+            <img src="/assets/images/rocket.svg" alt="box" class="sidebar__icon" />
+            Launch Mod
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <button type="button" class="dropdown-btn">
+            <img src="/assets/images/hand-cash.svg" alt="box" class="sidebar__icon" />
+            P2P Loans
+            <i class="fa-solid fa-chevron-down fa-xs active-chevron"></i>
+          </button>
+          <div class="dropdown active-dropdown">
+            <ul>
+              <li class="mb-3">
+                <a href="/p2p-loans/loan-listing/" class="sidebar__link green-text">
+                  Loan listing
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="/p2p-loans/loan-summary/" class="sidebar__link">
+                  Loan summary
+                </a>
+              </li>
+              <li>
+                <a href="/p2p-loans/funding-summary/" class="sidebar__link">
+                  Funding summary
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <a href="/my-insurance/" class="dropdown-btn">
+            <img src="/assets/images/hand-safety.svg" alt="box" class="sidebar__icon" />
+            My Insurance
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <a href="javascript:" class="dropdown-btn">
+            <img src="/assets/images/piggy-deposit.svg" alt="box" class="sidebar__icon" />
+            P2P Exchange
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <a href="/my-deposit/" class="dropdown-btn">
+            <img src="/assets/images/exchange-icon.svg" alt="box" class="sidebar__icon" />
+            My Deposit
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <a href="javascript:" class="dropdown-btn">
+            <img src="/assets/images/hand-coin.svg" alt="box" class="sidebar__icon" />
+            Moderator
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+        </li>
+        <!-- Sidebar Item -->
+      </ul>
+      <!-- Sidebar CTA -->
+      <div class="sidebar__cta p-3">
+        <p class="pb-2">Connect with us on:</p>
+        <ul class="social-icons">
+          <li>
+            <a href="https://twitter.com/sent_fi" target="_blank" rel="noopener" class="px-3 py-2 my-3">
+              <img src="/assets/images/twitter.svg" alt="twitter" class="sidebar__icon" />
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/sent_FI" target="_blank" rel="noopener" class="px-3 py-2 my-3">
+              <img src="/assets/images/instagram.svg" alt="instagram" class="sidebar__icon" />
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.gg/c2ZaCeGvYQ" target="_blank" rel="noopener" class="px-3 py-2 my-3">
+              <img src="/assets/images/discord.svg" alt="discord" class="sidebar__icon" />
+              Discord
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- sidebar -->
+    <main class="page-with-sidebar get-instant-loan">
+      <!-- Connect Wallet Modal -->
+      <div class="modal connect-wallet-modal" id="connect-wallet-modal">
+        <button type="button" data-close-button class="close-modal">
+          <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 8L8 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M8 8L24 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="modal-header">
+          <div class="title">Connect Wallet</div>
+        </div>
+        <div class="modal-body">
+          <div class="modal__item">
+            <a href="#" class="modal__item__link">
+              <div class="flex-item">
+                <img src="/assets/images/metamask.svg" alt="Metamask" class="icon-30px" />
+                <span>Metamask</span>
+              </div>
+              <div class="charet-icon">
+                <i class="fa-solid fa-chevron-right fa-xs"></i>
+              </div>
+            </a>
+          </div>
+          <div class="modal__item">
+            <a href="#" class="modal__item__link">
+              <div class="flex-item">
+                <img src="/assets/images/walletconnect.svg" alt="WalletConnect" class="icon-30px" />
+                <span>WalletConnect</span>
+              </div>
+              <div class="charet-icon">
+                <i class="fa-solid fa-chevron-right fa-xs"></i>
+              </div>
+            </a>
+          </div>
+          <div class="modal__item">
+            <a href="#" class="modal__item__link">
+              <div class="flex-item">
+                <img src="/assets/images/opensea.svg" alt="Opensea" class="icon-30px" />
+                <span>Opensea</span>
+              </div>
+              <div class="charet-icon">
+                <i class="fa-solid fa-chevron-right fa-xs"></i>
+              </div>
+            </a>
+          </div>
+          <div class="modal__item">
+            <a href="#" class="modal__item__link">
+              <div class="flex-item">
+                <img src="/assets/images/phantom-icon.svg" alt="Phantom" class="icon-30px" />
+                <span>Phantom</span>
+              </div>
+              <div class="charet-icon">
+                <i class="fa-solid fa-chevron-right fa-xs"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="overlay" id="overlay"></div>
+      <!-- End Connect Wallet modal -->
+
+      <div class="fw-bold mb-4 title1">
+        Loan Listing for <span class="green-text">Lord Frip #1</span>
+      </div>
+
+      <!-- ** LOAN AMOUNT ** -->
+      <section class="enter-amount mb-5">
+        <div class="enter-amount__left">
+          <div class="enter-amount__form">
+            <form>
+              <div class="form-title mb-3 red-text">Open Loan Request</div>
+              <div class="form-title mb-4">
+                Fund the Loan with this NFT as Collateral
+              </div>
+              <div class="form-info mb-5">
+                <!-- Item -->
+                <div class="form-info__item">
+                  <div class="title green-text">
+                    <img src="/assets/images/link-icon.svg" alt="link icon" class="info-icon" />
+                    Floor
+                    <img src="/assets/images/info-icon.svg" alt="info icon" class="info-icon" />
+                  </div>
+                  <div class="value solana-amount">
+                    <img src="/assets/images/solana.svg" alt="solana icon" />
+                    13.05
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="form-info__item">
+                  <div class="title green-text">
+                    <img src="/assets/images/link-icon.svg" alt="link icon" class="info-icon" />
+                    Floor
+                    <img src="/assets/images/info-icon.svg" alt="info icon" class="info-icon" />
+                  </div>
+                  <div class="value solana-amount">
+                    <img src="/assets/images/solana.svg" alt="solana icon" />
+                    13.05
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="form-info__item">
+                  <div class="title green-text">
+                    Collection Size
+                    <img src="/assets/images/info-icon.svg" alt="info icon" class="info-icon" />
+                  </div>
+                  <div class="value solana-amount">
+                    <img src="/assets/images/solana.svg" alt="solana icon" />
+                    13.05
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="form-info__item">
+                  <div class="title green-text">
+                    Funding Amount
+                    <img src="/assets/images/info-icon.svg" alt="info icon" class="info-icon" />
+                  </div>
+                  <div class="value solana-amount">
+                    <img src="/assets/images/solana.svg" alt="solana icon" />
+                    13.05
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="form-info__item">
+                  <div class="title green-text">
+                    Duration
+                    <img src="/assets/images/info-icon.svg" alt="info icon" class="info-icon" />
+                  </div>
+                  <div class="value">17 days</div>
+                </div>
+                <!-- Item -->
+                <div class="form-info__item">
+                  <div class="title green-text">
+                    LTF
+                    <img src="/assets/images/info-icon.svg" alt="info icon" class="info-icon" />
+                  </div>
+                  <div class="value">99.6%</div>
+                </div>
+                <!-- Item -->
+                <div class="form-info__item">
+                  <div class="title green-text">
+                    APY
+                    <img src="/assets/images/info-icon.svg" alt="info icon" class="info-icon" />
+                  </div>
+                  <div class="value">132.1%</div>
+                </div>
+                <!-- Item -->
+                <div class="form-info__item">
+                  <div class="title green-text">
+                    Early Repayment&nbsp;<span class="red-text">
+                      (Before 5.1 Days)
+                    </span>
+                    <img src="/assets/images/info-icon.svg" alt="info icon" class="info-icon" />
+                  </div>
+                  <div class="value solana-amount">
+                    <img src="/assets/images/solana.svg" alt="solana icon" />
+                    17.43
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="form-info__item">
+                  <div class="title green-text">
+                    Min Return
+                    <img src="/assets/images/info-icon.svg" alt="info icon" class="info-icon" />
+                  </div>
+                  <div class="value">50.32 (1.8%)</div>
+                </div>
+                <!-- Item -->
+                <div class="form-info__item">
+                  <div class="title green-text">
+                    Maturity Repayment&nbsp;<span class="red-text">
+                      (Day 17)
+                    </span>
+                    <img src="/assets/images/info-icon.svg" alt="info icon" class="info-icon" />
+                  </div>
+                  <div class="value solana-amount">
+                    <img src="/assets/images/solana.svg" alt="solana icon" />
+                    13.05
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="form-info__item">
+                  <div class="title green-text">
+                    Max Return
+                    <img src="/assets/images/info-icon.svg" alt="info icon" class="info-icon" />
+                  </div>
+                  <div class="value">13.05</div>
+                </div>
+                <!-- Item -->
+                <p>
+                  Loans can be paid back early with a minimum of 30% of total
+                  interest. Loans have a 6h grace after the initial loan
+                  period ends.
+                </p>
+                <p>
+                  Connect your wallet to fund, pay back, claim or cancel this
+                  Loan.
+                </p>
+              </div>
+              <div class="form-btn approval__cta">
+                <button type="button" data-modal-target="#connect-wallet-modal" class="loan me-3 auto">
+                  Connect Wallet
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="enter-amount__right">
+          <!-- Main slider block -->
+          <div class="slider mb-3 transparent">
+            <!-- Displayed Card Image -->
+            <div class="slider-item">
+              <div class="card-image">
+                <img src="/assets/images/lord-grip-3.png" alt="nft image" />
+              </div>
+            </div>
+            <!-- Arrow buttons -->
+            <!-- <a class="previous" onclick="previousSlide()">
+              <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.0002 38C8.50683 38 0.000244141 29.4934 0.000244141 19C0.000244141 8.50659 8.50683 0 19.0002 0C29.4937 0 38.0002 8.50659 38.0002 19C38.0002 29.4934 29.4937 38 19.0002 38Z" fill="#88E900" fill-opacity="0.78"/>
+<path d="M21.0002 24L15.0002 18L21.0002 12" stroke="#26143E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </a>
+            <a class="next" onclick="nextSlide()">
+              <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 38C29.4934 38 38 29.4934 38 19C38 8.50659 29.4934 0 19 0C8.50659 0 0 8.50659 0 19C0 29.4934 8.50659 38 19 38Z" fill="#88E900" fill-opacity="0.78"/>
+<path d="M16 25L22 19L16 13" stroke="#26143E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> -->
+            <!-- <button type="button" class="info-button">
+              <img src="/assets/images/info-icon-white.svg" alt="info icon" />
+            </button> -->
+          </div>
+          <div class="nft-carousel-list">
+            <p>Total NFTs for the loan</p>
+
+            <div class="nft-gallery">
+              <img src="/assets/images/lord-grip-3.png" alt="nft image" draggable="false" />
+              <img src="/assets/images/okay-bears.webp" alt="nft image" draggable="false" />
+              <img src="/assets/images/crypto-chicks.webp" alt="nft image" draggable="false" />
+              <img src="/assets/images/clone-x.webp" alt="nft image" draggable="false" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

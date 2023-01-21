@@ -1,0 +1,12 @@
+# vs code files
+.vscode
+
+# Mac Files
+.DS_Store
+
+# Microsoft Edge Dev files
+.hintrc
+
+# Ignore snippets.html file
+# This file is used to store reusable snippets of code that may be copied and pasted into other pages.
+snippets.html

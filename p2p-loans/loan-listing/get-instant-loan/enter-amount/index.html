@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#100420" />
+
+  <!-- Primary Meta Tags -->
+  <title>Enter Amount — Get Instant Loan | P2P Loans — SentFi</title>
+  <meta name="title" content="SentFi — The Anti-Scam and Anti-Rugpull Defi Platform" />
+  <meta name="description"
+    content="SentFI is a  platform, that protects web3 users from scams and supports personal and business loans, p2p commerce, NFT insurance & anti-rug pull for NFT investors." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sentfi.xyz/" />
+  <meta property="og:title" content="SentFi — The Anti-Scam and Anti-Rugpull Defi Platform" />
+  <meta property="og:description"
+    content="SentFI is a  platform, that protects web3 users from scams and supports personal and business loans, p2p commerce, NFT insurance & anti-rug pull for NFT investors." />
+  <meta property="og:image" content="https://i.ibb.co/nwQP5rY/image.png" />
+  <meta property="og:site_name" content="SentFi" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://sentfi.xyz/" />
+  <meta property="twitter:title" content="SentFi — The Anti-Scam and Anti-Rugpull Defi Platform" />
+  <meta property="twitter:description"
+    content="SentFI is a  platform, that protects web3 users from scams and supports personal and business loans, p2p commerce, NFT insurance & anti-rug pull for NFT investors." />
+  <meta property="twitter:image" content="https://i.ibb.co/nwQP5rY/image.png" />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/spacing.css" />
+
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/d778668bce.js" crossorigin="anonymous" defer></script>
+
+  <!-- Scripts -->
+  <script src="/assets/js/slider.js" defer></script>
+  <script src="/assets/js/dropdown.js" defer></script>
+  <script src="/assets/js/faviconChange.js" defer></script>
+  <script src="/assets/js/sidebar-toggle.js" defer></script>
+  <script src="/assets/js/wallet-sidebar-toggle.js" defer></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-56BGZFVWJM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-56BGZFVWJM");
+  </script>
+</head>
+
+<body class="page-with-sidebar">
+  <div class="get-loan-container">
+    <header>
+      <!-- navbar -->
+      <nav class="top-nav px-4">
+        <div class="header__logo">
+          <button class="hamburger" id="sidebar-toggle-btn" title="Toggle Sidebar">
+            &#9776;
+          </button>
+          <a href="/">
+            <img src="/assets/images/logo.svg" alt="SentFi logo" />
+          </a>
+        </div>
+        <div class="header__search relative">
+          <input type="text" placeholder="Search for collections" />
+          <button type="submit"><img src="/assets/images/search.svg" alt="Search icon" /></button>
+        </div>
+        <div class="header__cta relative">
+          <a title="Profile" href="#" class="dropdown-btn text-decoration-none mobile-hidden">
+            <img src="/assets/images/profile-icon-1.svg" alt="profile icon" class="profile-icon" />
+          </a>
+          <div class="navbar-dropdown-content profile-dropdown-content">
+            <a href="#">
+              <img src="/assets/images/profile-icon-1.svg" alt="profile icon" />
+              <span>Account</span>
+            </a>
+            <a href="#">
+              <img src="/assets/images/bell.svg" alt="notifications icon" />
+              <span>Notifications</span>
+              <span class="notification-count">1</span>
+            </a>
+            <a href="#">
+              <img src="/assets/images/inbox-icon.svg" alt="inbox icon" />
+              <span>Inbox</span>
+              <span class="notification-count">1</span>
+            </a>
+            <a href="#">
+              <img src="/assets/images/settings-icon.svg" alt="settings icon" />
+              <span>Settings</span>
+            </a>
+          </div>
+          <a title="Wallet" href="javascript:" class="text-decoration-none fw-bold relative mobile-hidden">
+            <img src="/assets/images/eth-1.svg" alt="ethereum icon" />
+            ETH
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+
+          <a title="Wallet" class="text-decoration-none pointer" id="toggle-btn">
+            <img src="/assets/images/wallet.svg" alt="wallet icon" /></a>
+        </div>
+      </nav>
+      <!-- navbar -->
+    </header>
+    <!-- sidebar -->
+    <aside class="sidebar px-4 py-5" id="sidebar">
+      <ul class="sidebar__items-container">
+        <!-- Sidebar Item -->
+        <li class="sidebar__item mt-0">
+          <button type="button" class="dropdown-btn">
+            <img src="/assets/images/box.svg" alt="box" class="sidebar__icon" />
+            Transactions
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </button>
+          <div class="dropdown">
+            <ul>
+              <li class="mb-3">
+                <a> Marketplace </a>
+              </li>
+              <li class="mb-3">
+                <a> Escrow </a>
+              </li>
+              <li>
+                <a> Orders </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <a href="javascript:" class="dropdown-btn">
+            <img src="/assets/images/rocket.svg" alt="box" class="sidebar__icon" />
+            Launch Mod
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <button type="button" class="dropdown-btn">
+            <img src="/assets/images/hand-cash.svg" alt="box" class="sidebar__icon" />
+            P2P Loans
+            <i class="fa-solid fa-chevron-down fa-xs active-chevron"></i>
+          </button>
+          <div class="dropdown active-dropdown">
+            <ul>
+              <li class="mb-3">
+                <a href="/p2p-loans/loan-listing/" class="sidebar__link green-text"> Loan listing </a>
+              </li>
+              <li class="mb-3">
+                <a href="/p2p-loans/loan-summary/" class="sidebar__link"> Loan summary </a>
+              </li>
+              <li>
+                <a href="/p2p-loans/funding-summary/" class="sidebar__link"> Funding summary </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <a href="/my-insurance/" class="dropdown-btn">
+            <img src="/assets/images/hand-safety.svg" alt="box" class="sidebar__icon" />
+            My Insurance
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <a href="javascript:" class="dropdown-btn">
+            <img src="/assets/images/piggy-deposit.svg" alt="box" class="sidebar__icon" />
+            P2P Exchange
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <a href="/my-deposit/" class="dropdown-btn">
+            <img src="/assets/images/exchange-icon.svg" alt="box" class="sidebar__icon" />
+            My Deposit
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <a href="javascript:" class="dropdown-btn">
+            <img src="/assets/images/hand-coin.svg" alt="box" class="sidebar__icon" />
+            Moderator
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+        </li>
+        <!-- Sidebar Item -->
+      </ul>
+      <!-- Sidebar CTA -->
+      <div class="sidebar__cta p-3">
+        <p class="pb-2">Connect with us on:</p>
+        <ul class="social-icons">
+          <li>
+            <a href="https://twitter.com/sent_fi" target="_blank" rel="noopener" class="px-3 py-2 my-3">
+              <img src="/assets/images/twitter.svg" alt="twitter" class="sidebar__icon" />
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/sent_FI" target="_blank" rel="noopener" class="px-3 py-2 my-3">
+              <img src="/assets/images/instagram.svg" alt="instagram" class="sidebar__icon" />
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.gg/c2ZaCeGvYQ" target="_blank" rel="noopener" class="px-3 py-2 my-3">
+              <img src="/assets/images/discord.svg" alt="discord" class="sidebar__icon" />
+              Discord
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- sidebar -->
+    <main class="page-with-sidebar get-instant-loan">
+      <!-- **HERO** -->
+      <section class="hero mt-3">
+        <div class="hero-left">
+          <h1 class="hero-title mb-2">Get instant loan</h1>
+          <p class="mb-4">
+            Select your collacterized NFTs and enter amount.
+          </p>
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="number">
+                <span>1</span>
+                <span class="line"></span>
+              </div>
+              <div class="text">
+                <span> Select NFT Collacteral </span>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="number">
+                <span class="active">2</span>
+                <span class="line"></span>
+              </div>
+              <div class="text">
+                <span class="active"> Enter Amount </span>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="number">
+                <span>3</span>
+              </div>
+              <div class="text">
+                <span> Approve </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-right mt-4">
+          <a href="/p2p-loans/loan-listing/verified-collections/" target="_blank" class="green-text">
+            View Verified Collections
+            <img src="/assets/images/external-link.svg" alt="external link" />
+          </a>
+        </div>
+
+        <div class="hero__blur-bg"></div>
+      </section>
+
+      <!-- ** LOAN AMOUNT ** -->
+      <section class="enter-amount mb-5">
+        <div class="enter-amount__left">
+          <div class="my-wallet__header mb-3">
+            <div class="right">
+              <div class="item">
+                <div>
+                  Interest APR &nbsp;
+                  <img src="/assets/images/info-icon.svg" alt="info icon" />
+                </div>
+                <div>20%</div>
+              </div>
+              <div class="item">
+                <div>
+                  Total Available Borrow &nbsp;
+                  <img src="/assets/images/info-icon.svg" alt="info icon" />
+                </div>
+                <div class="solana-amount">
+                  <img src="/assets/images/solana.svg" alt="solana icon" />
+                  101.5
+                </div>
+              </div>
+              <div class="item">
+                <div>
+                  Selected NFT Value: &nbsp;
+                  <img src="/assets/images/info-icon.svg" alt="info icon" />
+                </div>
+                <div class="solana-amount">
+                  <img src="/assets/images/solana.svg" alt="solana icon" />
+                  13.05 &nbsp;
+                  <span class="red-text">(Floor Price)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="enter-amount__form">
+            <form>
+              <div class="form-title mb-4">Enter loan amount</div>
+              <div class="form-fields mb-4">
+                <!-- Form Field -->
+                <div class="form-field">
+                  <label for="duration">Duration
+                    <img src="/assets/images/info-icon.svg" alt="info icon" class="info-icon" /></label>
+                  <div class="form-input duration">
+                    <input type="number" placeholder="0" id="duration" />
+                    <span>Days</span>
+                  </div>
+                </div>
+                <!-- Form Field -->
+                <div class="form-field">
+                  <label for="amount">Loan amount</label>
+                  <div class="form-input amount">
+                    <span><img src="/assets/images/solana-1.svg" alt="solana icon" /></span>
+                    <input type="number" placeholder="0" id="amount" />
+                  </div>
+                </div>
+                <!-- Form Field -->
+              </div>
+              <div class="form-info mb-5">
+                <div class="form-info__item">
+                  <div class="title green-text">
+                    Maximum repayment
+                    <img src="/assets/images/info-icon.svg" alt="info icon" class="info-icon" />
+                  </div>
+                  <div class="value solana-amount">
+                    <img src="/assets/images/solana.svg" alt="solana icon" />
+                    13.05
+                  </div>
+                </div>
+                <div class="form-info__item">
+                  <div class="title green-text">
+                    LTF
+                    <img src="/assets/images/info-icon.svg" alt="info icon" class="info-icon" />
+                  </div>
+                  <div class="value">142.1%</div>
+                </div>
+              </div>
+              <div class="form-btn approval__cta">
+                <button type="button" class="back me-3" onclick="history.back()">
+                  Back
+                </button>
+                <a href="../approve/"><button type="button" class="loan">Next</button></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="enter-amount__right">
+          <!-- Main slider block -->
+          <div class="slider mb-3">
+            <!-- first slide -->
+            <div class="slider-item">
+              <div class="card-image">
+                <img src="/assets/images/lord-grip-3.png" alt="nft image" />
+              </div>
+              <div class="card-text">
+                <div>
+                  <p class="title fw-bold">Lord Frip #764</p>
+                  <p class="name red-text">Lord Frip</p>
+                </div>
+                <div>
+                  <span class="fw-bold solana-amount mb-2">
+                    <img src="/assets/images/solana.svg" alt="solana icon" class="solana-icon" />
+                    13.05
+                  </span>
+                  <span class="blue-chip"> Blue Chip </span>
+                </div>
+              </div>
+            </div>
+            <!-- second slide -->
+            <div class="slider-item">
+              <div class="card-image">
+                <img src="/assets/images/primate.webp" alt="nft image" />
+              </div>
+              <div class="card-text">
+                <div>
+                  <p class="title fw-bold">Lord Grip #764</p>
+                  <p class="name red-text">Lord Grip</p>
+                </div>
+                <div>
+                  <span class="fw-bold solana-amount mb-2">
+                    <img src="/assets/images/solana.svg" alt="solana icon" class="solana-icon" />
+                    13.05
+                  </span>
+                  <span class="blue-chip"> Blue Chip </span>
+                </div>
+              </div>
+            </div>
+            <!-- third slide -->
+            <div class="slider-item">
+              <div class="card-image">
+                <img src="/assets/images/mv3-universe.webp" alt="nft image" />
+              </div>
+              <div class="card-text">
+                <div>
+                  <p class="title fw-bold">Lord Frip #764</p>
+                  <p class="name red-text">Lord Frip</p>
+                </div>
+                <div>
+                  <span class="fw-bold solana-amount mb-2">
+                    <img src="/assets/images/solana.svg" alt="solana icon" class="solana-icon" />
+                    13.05
+                  </span>
+                  <span class="blue-chip"> Blue Chip </span>
+                </div>
+              </div>
+            </div>
+            <!-- Arrow buttons -->
+            <a class="previous" onclick="previousSlide()">
+              <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.0002 38C8.50683 38 0.000244141 29.4934 0.000244141 19C0.000244141 8.50659 8.50683 0 19.0002 0C29.4937 0 38.0002 8.50659 38.0002 19C38.0002 29.4934 29.4937 38 19.0002 38Z"
+                  fill="#88E900" fill-opacity="0.78" />
+                <path d="M21.0002 24L15.0002 18L21.0002 12" stroke="#26143E" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a class="next" onclick="nextSlide()">
+              <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19 38C29.4934 38 38 29.4934 38 19C38 8.50659 29.4934 0 19 0C8.50659 0 0 8.50659 0 19C0 29.4934 8.50659 38 19 38Z"
+                  fill="#88E900" fill-opacity="0.78" />
+                <path d="M16 25L22 19L16 13" stroke="#26143E" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+          </div>
+          <a href="javascript:" class="green-text"> View all NFTs </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ----- Wallet Info - Sidebar ----- -->
+    <div class="wallet-sidebar" id="wallet-sidebar">
+      <div class="header">
+        <h3>
+          <span class="icon">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.1488 0.299316C9.74204 0.303955 6.47614 1.65925 4.06761 4.06809C1.65907 6.47694 0.303475 9.74274 0.298828 13.1493C0.299433 16.5573 1.65329 19.8255 4.06317 22.2351C6.47284 24.645 9.74091 25.9988 13.149 25.9995C13.39 25.9995 13.6308 25.9914 13.8718 25.9755V25.9753C17.1479 25.7877 20.2285 24.3552 22.4832 21.9709C24.7375 19.5864 25.9954 16.4305 25.9994 13.1494C25.9948 9.74265 24.6395 6.47675 22.2306 4.06821C19.8218 1.65967 16.556 0.304079 13.1495 0.299433L13.1488 0.299316ZM22.1603 19.0286C19.6831 16.8099 16.4748 15.5831 13.1488 15.5831C9.82279 15.5831 6.61503 16.8099 4.13731 19.0286C2.98389 17.2852 2.37203 15.2398 2.37848 13.1495C2.37848 10.2931 3.51331 7.55384 5.53297 5.53407C7.55278 3.51447 10.2922 2.37959 13.1484 2.37959C16.0045 2.37959 18.744 3.51441 20.7638 5.53407C22.7834 7.55389 23.9183 10.2933 23.9183 13.1495C23.9247 15.2397 23.3128 17.2851 22.1595 19.0286H22.1603Z"
+                fill="white" />
+              <path
+                d="M17.6629 9.32682C17.7065 10.5698 17.2561 11.7797 16.4104 12.6916C15.5646 13.6036 14.392 14.1437 13.1493 14.1938C11.9066 14.1438 10.734 13.6036 9.88814 12.6916C9.0425 11.7797 8.59213 10.5698 8.6357 9.32682C8.59234 8.0845 9.04289 6.87559 9.88892 5.96504C10.7348 5.05424 11.9071 4.516 13.1492 4.46777C14.3914 4.51597 15.5638 5.05424 16.4096 5.96504C17.2556 6.87564 17.7062 8.0845 17.6628 9.32682H17.6629Z"
+                fill="white" />
+            </svg>
+          </span>
+          <span class="text">My Wallet</span>
+        </h3>
+      </div>
+
+      <div class="body">
+        If you don't have a wallet yet, you can select a provider and create one now.
+        <div class="body__wallets">
+          <!-- WalletConnect -->
+          <a href="javascript:" class="wallet">
+            <img src="/assets/images/walletconnect.svg" alt="wallet connect icon"
+              class="icon-30px vertical-align-middle" />
+            <span>WalletConnect</span>
+          </a>
+          <!-- MetaMask -->
+          <a href="javascript:" class="wallet">
+            <img src="/assets/images/metamask.svg" alt="metamask icon" class="icon-30px vertical-align-middle" />
+            <span>MetaMask</span>
+          </a>
+          <!-- Coinbase Wallet -->
+          <a href="javascript:" class="wallet">
+            <img src="/assets/images/coinbase.svg" alt="coinbase icon" class="icon-30px vertical-align-middle" />
+            <span>Coinbase Wallet</span>
+          </a>
+          <!-- Phantom -->
+          <a href="javascript:" class="wallet">
+            <img src="/assets/images/phantom-icon.svg" alt="phantom icon" class="icon-30px vertical-align-middle" />
+            <span>Phantom</span>
+          </a>
+          <!-- Glow -->
+          <a href="javascript:" class="wallet">
+            <img src="/assets/images/glow.svg" alt="glow icon" class="icon-30px vertical-align-middle" />
+            <span>Glow</span>
+          </a>
+          <!-- Trust -->
+          <a href="javascript:" class="wallet">
+            <img src="/assets/images/trust.svg" alt="trust icon" class="icon-30px vertical-align-middle" />
+            <span>Trust</span>
+          </a>
+          <!-- More Options -->
+          <a href="javascript:" class="wallet">
+            <span class="red-text">More Options +</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- ----- Wallet Info - Sidebar ----- -->
+  </div>
+</body>
+
+</html>

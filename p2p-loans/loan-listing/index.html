@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#100420" />
+
+  <!-- Primary Meta Tags -->
+  <title>Loan Listing | P2P Loans — SentFi</title>
+  <meta name="title" content="SentFi — The Anti-Scam and Anti-Rugpull Defi Platform" />
+  <meta name="description"
+    content="SentFI is a  platform, that protects web3 users from scams and supports personal and business loans, p2p commerce, NFT insurance & anti-rug pull for NFT investors." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sentfi.xyz/" />
+  <meta property="og:title" content="SentFi — The Anti-Scam and Anti-Rugpull Defi Platform" />
+  <meta property="og:description"
+    content="SentFI is a  platform, that protects web3 users from scams and supports personal and business loans, p2p commerce, NFT insurance & anti-rug pull for NFT investors." />
+  <meta property="og:image" content="https://i.ibb.co/nwQP5rY/image.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://sentfi.xyz/" />
+  <meta property="twitter:title" content="SentFi — The Anti-Scam and Anti-Rugpull Defi Platform" />
+  <meta property="twitter:description"
+    content="SentFI is a  platform, that protects web3 users from scams and supports personal and business loans, p2p commerce, NFT insurance & anti-rug pull for NFT investors." />
+  <meta property="twitter:image" content="https://i.ibb.co/nwQP5rY/image.png" />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/spacing.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/d778668bce.js" crossorigin="anonymous" defer></script>
+
+  <!-- Scripts -->
+  <script src="/assets/js/modal.js" defer></script>
+  <script src="/assets/js/dropdown.js" defer></script>
+  <script src="/assets/js/faviconChange.js" defer></script>
+  <script src="/assets/js/sidebar-toggle.js" defer></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-56BGZFVWJM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-56BGZFVWJM');
+  </script>
+</head>
+
+<body class="page-with-sidebar">
+  <header>
+    <!-- navbar -->
+    <nav class="top-nav px-4">
+      <div class="header__logo">
+        <button class="hamburger" id="sidebar-toggle-btn" title="Toggle Sidebar">
+          &#9776;
+        </button>
+        <a href="/">
+          <img src="/assets/images/logo.svg" alt="SentFi logo" />
+        </a>
+      </div>
+      <div class="header__search relative">
+        <input type="text" placeholder="Search for collections" />
+        <button type="submit">
+          <img src="/assets/images/search.svg" alt="Search icon" />
+        </button>
+      </div>
+      <div class="header__cta">
+        <a href="#" data-modal-target="#connect-wallet-modal" class="dropdown-btn" role="button">
+          <img src="/assets/images/wallet.svg" alt="img" />
+          <span class="text">Connect Wallet</span>
+        </a>
+      </div>
+    </nav>
+    <!-- navbar -->
+  </header>
+  <!-- sidebar -->
+  <aside class="sidebar px-4 py-5" id="sidebar">
+    <ul class="sidebar__items-container">
+      <!-- Sidebar Item -->
+      <li class="sidebar__item mt-0">
+        <button type="button" class="dropdown-btn">
+          <img src="/assets/images/box.svg" alt="box" class="sidebar__icon" />
+          Transactions
+          <i class="fa-solid fa-chevron-down fa-xs"></i>
+        </button>
+        <div class="dropdown">
+          <ul>
+            <li class="mb-3">
+              <a> Marketplace </a>
+            </li>
+            <li class="mb-3">
+              <a> Escrow </a>
+            </li>
+            <li>
+              <a> Orders </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <!-- Sidebar Item -->
+      <li class="sidebar__item">
+        <a href="javascript:" class="dropdown-btn">
+          <img src="/assets/images/rocket.svg" alt="box" class="sidebar__icon" />
+          Launch Mod
+          <i class="fa-solid fa-chevron-down fa-xs"></i>
+        </a>
+      </li>
+      <!-- Sidebar Item -->
+      <li class="sidebar__item">
+        <button type="button" class="dropdown-btn">
+          <img src="/assets/images/hand-cash.svg" alt="box" class="sidebar__icon" />
+          P2P Loans
+          <i class="fa-solid fa-chevron-down fa-xs active-chevron"></i>
+        </button>
+        <div class="dropdown active-dropdown">
+          <ul>
+            <li class="mb-3">
+              <a href="/p2p-loans/loan-listing/" class="sidebar__link green-text">
+                Loan listing
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="/p2p-loans/loan-summary/" class="sidebar__link">
+                Loan summary
+              </a>
+            </li>
+            <li>
+              <a href="/p2p-loans/funding-summary/" class="sidebar__link">
+                Funding summary
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <!-- Sidebar Item -->
+      <li class="sidebar__item">
+        <a href="/my-insurance/" class="dropdown-btn">
+          <img src="/assets/images/hand-safety.svg" alt="box" class="sidebar__icon" />
+          My Insurance
+          <i class="fa-solid fa-chevron-down fa-xs"></i>
+        </a>
+      </li>
+      <!-- Sidebar Item -->
+      <li class="sidebar__item">
+        <a href="javascript:" class="dropdown-btn">
+          <img src="/assets/images/piggy-deposit.svg" alt="box" class="sidebar__icon" />
+          P2P Exchange
+          <i class="fa-solid fa-chevron-down fa-xs"></i>
+        </a>
+      </li>
+      <!-- Sidebar Item -->
+      <li class="sidebar__item">
+        <a href="/my-deposit/" class="dropdown-btn">
+          <img src="/assets/images/exchange-icon.svg" alt="box" class="sidebar__icon" />
+          My Deposit
+          <i class="fa-solid fa-chevron-down fa-xs"></i>
+        </a>
+      </li>
+      <!-- Sidebar Item -->
+      <li class="sidebar__item">
+        <a href="javascript:" class="dropdown-btn">
+          <img src="/assets/images/hand-coin.svg" alt="box" class="sidebar__icon" />
+          Moderator
+          <i class="fa-solid fa-chevron-down fa-xs"></i>
+        </a>
+      </li>
+      <!-- Sidebar Item -->
+    </ul>
+    <!-- Sidebar CTA -->
+    <div class="sidebar__cta p-3">
+      <p class="pb-2">Connect with us on:</p>
+      <ul class="social-icons">
+        <li>
+          <a href="https://twitter.com/sent_fi" target="_blank" rel="noopener" class="px-3 py-2 my-3">
+            <img src="/assets/images/twitter.svg" alt="twitter" class="sidebar__icon" />
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/sent_FI" target="_blank" rel="noopener" class="px-3 py-2 my-3">
+            <img src="/assets/images/instagram.svg" alt="instagram" class="sidebar__icon" />
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://discord.gg/c2ZaCeGvYQ" target="_blank" rel="noopener" class="px-3 py-2 my-3">
+            <img src="/assets/images/discord.svg" alt="discord" class="sidebar__icon" />
+            Discord
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <!-- sidebar -->
+
+  <main>
+    <!-- Connect Wallet Modal -->
+    <div class="connect-wallet-modal modal" id="connect-wallet-modal">
+      <button type="button" data-close-button class="close-modal">
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 8L8 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M8 8L24 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <div class="modal-header">
+        <div class="title">Connect Wallet</div>
+      </div>
+      <div class="modal-body">
+        <div class="modal__item">
+          <a href="#" class="modal__item__link">
+            <div class="flex-item">
+              <img src="/assets/images/metamask.svg" alt="Metamask" class="icon-30px" />
+              <span>Metamask</span>
+            </div>
+            <div class="charet-icon">
+              <i class="fa-solid fa-chevron-right fa-xs"></i>
+            </div>
+          </a>
+        </div>
+        <div class="modal__item">
+          <a href="#" class="modal__item__link">
+            <div class="flex-item">
+              <img src="/assets/images/walletconnect.svg" alt="WalletConnect" class="icon-30px" />
+              <span>WalletConnect</span>
+            </div>
+            <div class="charet-icon">
+              <i class="fa-solid fa-chevron-right fa-xs"></i>
+            </div>
+          </a>
+        </div>
+        <div class="modal__item">
+          <a href="#" class="modal__item__link">
+            <div class="flex-item">
+              <img src="/assets/images/opensea.svg" alt="Opensea" class="icon-30px" />
+              <span>Opensea</span>
+            </div>
+            <div class="charet-icon">
+              <i class="fa-solid fa-chevron-right fa-xs"></i>
+            </div>
+          </a>
+        </div>
+        <div class="modal__item">
+          <a href="#" class="modal__item__link">
+            <div class="flex-item">
+              <img src="/assets/images/phantom-icon.svg" alt="Phantom" class="icon-30px" />
+              <span>Phantom</span>
+            </div>
+            <div class="charet-icon">
+              <i class="fa-solid fa-chevron-right fa-xs"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <!-- End Connect Wallet modal -->
+
+    <!-- hero section -->
+    <section class="hero">
+      <div class="hero__left mt-4 me-4">
+        <div class="hero-subtitle mb-2">NFT loan listing</div>
+        <h1 class="hero-title green-text mb-3">Offer and aquire loan</h1>
+        <p class="hero-description mb-4">
+          With SentFi.xyz you can buy and sell anything safely without the
+          risk of chargebacks. Truly secure payments.
+        </p>
+        <div class="hero__cta">
+          <a href="./create-loan-listing/" class="create-loan-btn">Create loan listing</a>
+          <a href="./get-instant-loan/" class="get-loan-btn">Get instant loan</a>
+        </div>
+      </div>
+
+      <div class="hero__right mb-5">
+        <div class="deposit-apr item px-4 py-4">
+          <div class="hero-subtitle mb-2">Deposit APR</div>
+          <p class="hero-description mb-2">
+            Earn interest by supplying lending pools
+          </p>
+          <ul>
+            <li>
+              <div class="left">
+                <img src="/assets/images/eth.svg" alt="eth" class="hero__icon" width="35" height="35" />
+                <div class="ms-1 nft">
+                  ETH <br />
+                  <span class="green-text apy">APY 21.2%</span>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button" class="deposit-btn">Deposit</button>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="/assets/images/sql.svg" alt="eth" class="hero__icon" width="35" height="35" />
+                <div class="ms-1 nft">
+                  SQL <br />
+                  <span class="green-text apy">APY 21.2%</span>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button" class="deposit-btn">Deposit</button>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="/assets/images/usdc.svg" alt="eth" class="hero__icon" width="35" height="35" />
+                <div class="ms-1 nft">
+                  USDC <br />
+                  <span class="green-text apy">APY 21.2%</span>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button" class="deposit-btn">Deposit</button>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="/assets/images/matic.svg" alt="eth" class="hero__icon" width="35" height="35" />
+                <div class="ms-1 nft">
+                  Matic <br />
+                  <span class="green-text apy">APY 21.2%</span>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button" class="deposit-btn">Deposit</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="deposit-apr item px-4 py-4">
+          <div class="hero-subtitle mb-2">Instant loan</div>
+          <p class="hero-description mb-2">
+            Get access to instant NFT-backed loans
+          </p>
+          <ul>
+            <li>
+              <div class="left">
+                <img src="/assets/images/eth.svg" alt="eth" class="hero__icon" width="35" height="35" />
+                <div class="ms-1 nft">
+                  ETH <br />
+                  <span class="green-text apy">APY -21.2%</span>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button" class="deposit-btn">Borrow</button>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="/assets/images/sql.svg" alt="eth" class="hero__icon" width="35" height="35" />
+                <div class="ms-1 nft">
+                  SQL <br />
+                  <span class="green-text apy">APY -21.2%</span>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button" class="deposit-btn">Borrow</button>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="/assets/images/usdc.svg" alt="eth" class="hero__icon" width="35" height="35" />
+                <div class="ms-1 nft">
+                  USDC <br />
+                  <span class="green-text apy">APY -21.2%</span>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button" class="deposit-btn">Borrow</button>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <img src="/assets/images/matic.svg" alt="eth" class="hero__icon" width="35" height="35" />
+                <div class="ms-1 nft">
+                  Matic <br />
+                  <span class="green-text apy">APY -21.2%</span>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button" class="deposit-btn">Borrow</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero__blur-bg"></div>
+    </section>
+
+    <!-- Loan Listing Section -->
+    <section class="loan-listing mb-5">
+      <!-- <div class="loan-listing__header mb-3">
+        <a class="pb-3 active"> Loan listing </a>
+        <a href="javascript:" class="pb-3"> Loan history </a>
+      </div> -->
+      <div class="title">
+        <h2>Loan listing</h2>
+      </div>
+      <!-- Filter -->
+      <div class="loan-listing__filter py-4 px-3 mt-4">
+        <p class="mb-3 ms-3">Filter</p>
+        <div class="filter__dropdown">
+          <!-- Dropdown Item -->
+          <div class="dropdown-item">
+            <button type="button" class="filter-dropdown-btn">
+              Loan amount
+              <i class="fa-solid fa-chevron-down fa-xs ms-3 filter-dropdown-icon"></i>
+            </button>
+            <div class="dropdown-content filter-dropdown-content">
+              <ul>
+                <li>
+                  <a href="#">All</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">0 - 1000</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">1000 - 10000</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">10000 - 100000</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">100000 - 1000000</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Dropdown Item -->
+          <div class="dropdown-item">
+            <button type="button" class="filter-dropdown-btn">
+              Collections
+              <i class="fa-solid fa-chevron-down fa-xs ms-3 filter-dropdown-icon"></i>
+            </button>
+            <div class="dropdown-content filter-dropdown-content">
+              <ul>
+                <li>
+                  <a href="#">All</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">0 - 1000</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">1000 - 10000</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">10000 - 100000</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">100000 - 1000000</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Dropdown Item -->
+          <div class="dropdown-item">
+            <button type="button" class="filter-dropdown-btn">
+              Total interest
+              <i class="fa-solid fa-chevron-down fa-xs ms-3 filter-dropdown-icon"></i>
+            </button>
+            <div class="dropdown-content filter-dropdown-content">
+              <ul>
+                <li>
+                  <a href="#">All</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">5 SOL</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">10 SOL</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">20 SOL</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">50 SOL</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Dropdown Item -->
+          <div class="dropdown-item">
+            <button type="button" class="filter-dropdown-btn">
+              Return rate
+              <i class="fa-solid fa-chevron-down fa-xs ms-3 filter-dropdown-icon"></i>
+            </button>
+            <div class="dropdown-content filter-dropdown-content">
+              <ul>
+                <li>
+                  <a href="#">All</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">1%</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">10%</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">20%</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">40%</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Dropdown Item -->
+          <div class="dropdown-item">
+            <button type="button" class="filter-dropdown-btn">
+              Loan duration
+              <i class="fa-solid fa-chevron-down fa-xs ms-3 filter-dropdown-icon"></i>
+            </button>
+            <div class="dropdown-content filter-dropdown-content">
+              <ul>
+                <li>
+                  <a href="#">All</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">2 days</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">4 days</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">10 days</a>
+                </li>
+                <hr />
+                <li>
+                  <a href="#">More than 20 days</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Dropdown Item -->
+          </div>
+        </div>
+      </div>
+      <!-- Filter -->
+
+      <!-- NFT Cards -->
+      <div class="nfts mt-5">
+        <div class="nfts__wrapper">
+          <!-- NFT Card -->
+          <a href="./loan-listing-1/" class="nfts__card">
+            <div class="nfts__card__left">
+              <span> +4 NFTS </span>
+              <img src="/assets/images/lord-grip-1.png" alt="owner image" />
+            </div>
+            <div class="nfts__card__right">
+              <p class="nft-name">Lord Grip #764</p>
+              <p class="nfts-listed">+4 NFTs listed</p>
+              <div class="status">
+                <div class="status__item">
+                  <img src="/assets/images/clock.svg" alt="clock-icon" />
+                  10 days
+                </div>
+                <div class="status__item">
+                  <img src="/assets/images/cylinder.svg" alt="cylinder-like-icon" />
+                  3.5%
+                </div>
+                <div>
+                  <span class="green-text">LTF</span>
+                  99.6%
+                </div>
+                <div>
+                  <span class="green-text">APY</span>
+                  99.6%
+                </div>
+              </div>
+              <div class="card__footer">
+                Loan + Return
+                <div class="solana-amount">
+                  <img src="/assets/images/solana.svg" alt="solana-icon" />
+                  8.1
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- NFT Card -->
+          <a href="./loan-listing-1/" class="nfts__card">
+            <div class="nfts__card__left">
+              <!-- <span>
+                  +4 NFTS
+                </span> -->
+              <img src="/assets/images/lord-grip-2.png" alt="owner image" />
+            </div>
+            <div class="nfts__card__right">
+              <p class="nft-name">Lord Grip #764</p>
+              <!-- <p class="nfts-listed">
+                  +4 NFTs listed
+                </p> -->
+              <div class="status">
+                <div class="status__item">
+                  <img src="/assets/images/clock.svg" alt="clock-icon" />
+                  10 days
+                </div>
+                <div class="status__item">
+                  <img src="/assets/images/cylinder.svg" alt="cylinder-like-icon" />
+                  3.5%
+                </div>
+                <div>
+                  <span class="green-text">LTF</span>
+                  99.6%
+                </div>
+                <div>
+                  <span class="green-text">APY</span>
+                  99.6%
+                </div>
+              </div>
+              <div class="card__footer">
+                Loan + Return
+                <div class="solana-amount">
+                  <img src="/assets/images/solana.svg" alt="solana-icon" />
+                  8.1
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- NFT Card -->
+          <a href="./loan-listing-1/" class="nfts__card">
+            <div class="nfts__card__left">
+              <span> +4 NFTS </span>
+              <img src="/assets/images/doodle.png" alt="owner image" />
+            </div>
+            <div class="nfts__card__right">
+              <p class="nft-name">Doodle</p>
+              <p class="nfts-listed">+2 NFTs listed</p>
+              <div class="status">
+                <div class="status__item">
+                  <img src="/assets/images/clock.svg" alt="clock-icon" />
+                  10 days
+                </div>
+                <div class="status__item">
+                  <img src="/assets/images/cylinder.svg" alt="cylinder-like-icon" />
+                  3.5%
+                </div>
+                <div>
+                  <span class="green-text">LTF</span>
+                  99.6%
+                </div>
+                <div>
+                  <span class="green-text">APY</span>
+                  99.6%
+                </div>
+              </div>
+              <div class="card__footer">
+                Loan + Return
+                <div class="solana-amount">
+                  <img src="/assets/images/solana.svg" alt="solana-icon" />
+                  8.1
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- NFT Card -->
+          <a href="./loan-listing-1/" class="nfts__card">
+            <div class="nfts__card__left">
+              <span> +5 NFTS </span>
+              <img src="/assets/images/bored-ape.svg" alt="owner image" />
+            </div>
+            <div class="nfts__card__right">
+              <p class="nft-name">Bored Ape</p>
+              <p class="nfts-listed">+5 NFTs listed</p>
+              <div class="status">
+                <div class="status__item">
+                  <img src="/assets/images/clock.svg" alt="clock-icon" />
+                  10 days
+                </div>
+                <div class="status__item">
+                  <img src="/assets/images/cylinder.svg" alt="cylinder-like-icon" />
+                  3.5%
+                </div>
+                <div>
+                  <span class="green-text">LTF</span>
+                  99.6%
+                </div>
+                <div>
+                  <span class="green-text">APY</span>
+                  99.6%
+                </div>
+              </div>
+              <div class="card__footer">
+                Loan + Return
+                <div class="solana-amount">
+                  <img src="/assets/images/solana.svg" alt="solana-icon" />
+                  8.1
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- NFT Card -->
+          <a href="./loan-listing-1/" class="nfts__card">
+            <div class="nfts__card__left">
+              <span> +2 NFTS </span>
+              <img src="/assets/images/crypto-punks.svg" alt="owner image" />
+            </div>
+            <div class="nfts__card__right">
+              <p class="nft-name">Crypto Punks</p>
+              <p class="nfts-listed">+2 NFTs listed</p>
+              <div class="status">
+                <div class="status__item">
+                  <img src="/assets/images/clock.svg" alt="clock-icon" />
+                  10 days
+                </div>
+                <div class="status__item">
+                  <img src="/assets/images/cylinder.svg" alt="cylinder-like-icon" />
+                  3.5%
+                </div>
+                <div>
+                  <span class="green-text">LTF</span>
+                  99.6%
+                </div>
+                <div>
+                  <span class="green-text">APY</span>
+                  99.6%
+                </div>
+              </div>
+              <div class="card__footer">
+                Loan + Return
+                <div class="solana-amount">
+                  <img src="/assets/images/solana.svg" alt="solana-icon" />
+                  8.1
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- NFT Card -->
+          <a href="./loan-listing-1/" class="nfts__card">
+            <div class="nfts__card__left">
+              <span> +5 NFTS </span>
+              <img src="/assets/images/block-smith-labs.png" alt="owner image" />
+            </div>
+            <div class="nfts__card__right">
+              <p class="nft-name">Block Smith Labs</p>
+              <p class="nfts-listed">+5 NFTs listed</p>
+              <div class="status">
+                <div class="status__item">
+                  <img src="/assets/images/clock.svg" alt="clock-icon" />
+                  10 days
+                </div>
+                <div class="status__item">
+                  <img src="/assets/images/cylinder.svg" alt="cylinder-like-icon" />
+                  3.5%
+                </div>
+                <div>
+                  <span class="green-text">LTF</span>
+                  99.6%
+                </div>
+                <div>
+                  <span class="green-text">APY</span>
+                  99.6%
+                </div>
+              </div>
+              <div class="card__footer">
+                Loan + Return
+                <div class="solana-amount">
+                  <img src="/assets/images/solana.svg" alt="solana-icon" />
+                  8.1
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- NFT Card -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>

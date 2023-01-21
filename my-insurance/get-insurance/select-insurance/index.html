@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#100420" />
+
+  <!-- Primary Meta Tags -->
+  <title>Get Insurance | My Insurance — SentFi</title>
+  <meta name="title" content="SentFi — The Anti-Scam and Anti-Rugpull Defi Platform" />
+  <meta name="description"
+    content="SentFI is a  platform, that protects web3 users from scams and supports personal and business loans, p2p commerce, NFT insurance & anti-rug pull for NFT investors." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sentfi.xyz/" />
+  <meta property="og:title" content="SentFi — The Anti-Scam and Anti-Rugpull Defi Platform" />
+  <meta property="og:description"
+    content="SentFI is a  platform, that protects web3 users from scams and supports personal and business loans, p2p commerce, NFT insurance & anti-rug pull for NFT investors." />
+  <meta property="og:image" content="https://i.ibb.co/nwQP5rY/image.png" />
+  <meta property="og:site_name" content="SentFi" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://sentfi.xyz/" />
+  <meta property="twitter:title" content="SentFi — The Anti-Scam and Anti-Rugpull Defi Platform" />
+  <meta property="twitter:description"
+    content="SentFI is a  platform, that protects web3 users from scams and supports personal and business loans, p2p commerce, NFT insurance & anti-rug pull for NFT investors." />
+  <meta property="twitter:image" content="https://i.ibb.co/nwQP5rY/image.png" />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/spacing.css" />
+
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/d778668bce.js" crossorigin="anonymous" defer></script>
+
+  <!-- Scripts -->
+  <script src="/assets/js/dropdown.js" defer></script>
+  <script src="/assets/js/faviconChange.js" defer></script>
+  <script src="/assets/js/insuranceHighlight.js" defer></script>
+  <script src="/assets/js/sidebar-toggle.js" defer></script>
+  <script src="/assets/js/wallet-sidebar-toggle.js" defer></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-56BGZFVWJM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-56BGZFVWJM');
+  </script>
+</head>
+
+<body class="page-with-sidebar">
+  <div class="get-loan-container">
+    <header>
+      <!-- navbar -->
+      <nav class="top-nav px-4">
+        <div class="header__logo">
+          <button class="hamburger" id="sidebar-toggle-btn" title="Toggle Sidebar">
+            &#9776;
+          </button>
+          <a href="/">
+            <img src="/assets/images/logo.svg" alt="SentFi logo" />
+          </a>
+        </div>
+        <div class="header__search relative">
+          <input type="text" placeholder="Search for collections" />
+          <button type="submit">
+            <img src="/assets/images/search.svg" alt="Search icon" />
+          </button>
+        </div>
+        <div class="header__cta relative">
+          <a title="Profile" href="#" class="dropdown-btn text-decoration-none mobile-hidden">
+            <img src="/assets/images/profile-icon-1.svg" alt="profile icon" class="profile-icon" />
+          </a>
+          <div class="navbar-dropdown-content profile-dropdown-content">
+            <a href="#">
+              <img src="/assets/images/profile-icon-1.svg" alt="profile icon" />
+              <span>Account</span>
+            </a>
+            <a href="#">
+              <img src="/assets/images/bell.svg" alt="notifications icon" />
+              <span>Notifications</span>
+              <span class="notification-count">1</span>
+            </a>
+            <a href="#">
+              <img src="/assets/images/inbox-icon.svg" alt="inbox icon" />
+              <span>Inbox</span>
+              <span class="notification-count">1</span>
+            </a>
+            <a href="#">
+              <img src="/assets/images/settings-icon.svg" alt="settings icon" />
+              <span>Settings</span>
+            </a>
+          </div>
+          <a title="Wallet" href="javascript:" class="text-decoration-none fw-bold relative mobile-hidden">
+            <img src="/assets/images/eth-1.svg" alt="ethereum icon" />
+            ETH
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+
+          <a title="Wallet" class="text-decoration-none pointer" id="toggle-btn">
+            <img src="/assets/images/wallet.svg" alt="wallet icon" /></a>
+        </div>
+      </nav>
+      <!-- navbar -->
+    </header>
+    <!-- sidebar -->
+    <aside class="sidebar px-4 py-5" id="sidebar">
+      <ul class="sidebar__items-container">
+        <!-- Sidebar Item -->
+        <li class="sidebar__item mt-0">
+          <button type="button" class="dropdown-btn">
+            <img src="/assets/images/box.svg" alt="box" class="sidebar__icon" />
+            Transactions
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </button>
+          <div class="dropdown">
+            <ul>
+              <li class="mb-3">
+                <a> Marketplace </a>
+              </li>
+              <li class="mb-3">
+                <a> Escrow </a>
+              </li>
+              <li>
+                <a> Orders </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <a href="javascript:" class="dropdown-btn">
+            <img src="/assets/images/rocket.svg" alt="box" class="sidebar__icon" />
+            Launch Mod
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <button type="button" class="dropdown-btn">
+            <img src="/assets/images/hand-cash.svg" alt="box" class="sidebar__icon" />
+            P2P Loans
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </button>
+          <div class="dropdown">
+            <ul>
+              <li class="mb-3">
+                <a href="/p2p-loans/loan-listing/" class="sidebar__link">
+                  Loan listing
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="/p2p-loans/loan-summary/" class="sidebar__link">
+                  Loan summary
+                </a>
+              </li>
+              <li>
+                <a href="/p2p-loans/funding-summary/" class="sidebar__link">
+                  Funding summary
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <a href="/my-insurance/" class="dropdown-btn green-text">
+            <img src="/assets/images/hand-safety-green.svg" alt="box" class="sidebar__icon" />
+            My Insurance
+            <i class="fa-solid fa-chevron-right fa-xs"></i>
+          </a>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <a href="javascript:" class="dropdown-btn">
+            <img src="/assets/images/piggy-deposit.svg" alt="box" class="sidebar__icon" />
+            P2P Exchange
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <a href="/my-deposit/" class="dropdown-btn">
+            <img src="/assets/images/exchange-icon.svg" alt="box" class="sidebar__icon" />
+            My Deposit
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+        </li>
+        <!-- Sidebar Item -->
+        <li class="sidebar__item">
+          <a href="javascript:" class="dropdown-btn">
+            <img src="/assets/images/hand-coin.svg" alt="box" class="sidebar__icon" />
+            Moderator
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </a>
+        </li>
+        <!-- Sidebar Item -->
+      </ul>
+      <!-- Sidebar CTA -->
+      <div class="sidebar__cta p-3">
+        <p class="pb-2">Connect with us on:</p>
+        <ul class="social-icons">
+          <li>
+            <a href="https://twitter.com/sent_fi" target="_blank" rel="noopener" class="px-3 py-2 my-3">
+              <img src="/assets/images/twitter.svg" alt="twitter" class="sidebar__icon" />
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/sent_FI" target="_blank" rel="noopener" class="px-3 py-2 my-3">
+              <img src="/assets/images/instagram.svg" alt="instagram" class="sidebar__icon" />
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.gg/c2ZaCeGvYQ" target="_blank" rel="noopener" class="px-3 py-2 my-3">
+              <img src="/assets/images/discord.svg" alt="discord" class="sidebar__icon" />
+              Discord
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- sidebar -->
+
+    <main class="page-with-sidebar get-instant-loan">
+      <!-- ******* HERO ******** -->
+      <section class="hero mt-3">
+        <div class="hero-left">
+          <h1 class="hero-title mb-2">Get insurance</h1>
+          <p class="mb-4">Select your collaterized NFTs and enter amount.</p>
+
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="number">
+                <span>1</span>
+                <span class="line"></span>
+              </div>
+              <div class="text">
+                <span> Select NFT to insure </span>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <div class="number">
+                <span class="active">2</span>
+                <span class="line"></span>
+              </div>
+              <div class="text">
+                <span class="active"> Select insurance package </span>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <div class="number">
+                <span>3</span>
+              </div>
+              <div class="text">
+                <span> T & C </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ******** Insurance ******** -->
+      <section class="my-insurance">
+        <h2>Select insurance package</h2>
+        <div class="select-insurance">
+          <!-- Theft Cover -->
+          <div class="insurance__item">
+            <div class="icon">
+              <svg width="57" height="60" viewBox="0 0 57 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M55.4317 12.4349L29.6677 0.264149C28.9291 -0.0880496 28.0711 -0.0880496 27.333 0.264149L1.56683 12.4349C1.07802 12.6657 0.668567 13.0361 0.390064 13.4993C0.112038 13.9625 -0.0228605 14.4982 0.00316656 15.0382L0.00793768 15.0703C0.450354 24.1584 3.16516 32.9905 7.90411 40.7576C12.6427 48.5254 19.2543 54.9803 27.1324 59.5317C27.5479 59.772 28.019 59.8987 28.4987 59.8987C28.9788 59.8987 29.4499 59.772 29.865 59.5317C37.7461 54.9826 44.3598 48.5282 49.0988 40.7598C53.8383 32.992 56.5522 24.1586 56.992 15.0692L56.9968 15.0371H56.9964C57.0219 14.4971 56.8866 13.9614 56.6082 13.4982C56.3297 13.035 55.9202 12.6646 55.4309 12.4338L55.4317 12.4349ZM51.2313 18.3741H51.2318C50.3947 25.3616 48.0516 32.0838 44.3648 38.0787C40.6776 44.0725 35.7339 49.1957 29.8756 53.0942C29.4687 53.3666 28.9899 53.5123 28.4997 53.5123C28.01 53.5123 27.5312 53.3666 27.1243 53.0942C21.2658 49.1954 16.323 44.0725 12.6362 38.0787C8.94945 32.0849 6.60635 25.3627 5.76835 18.3752C5.70589 17.8586 5.80782 17.3351 6.05983 16.8796C6.31182 16.4238 6.70089 16.0594 7.17197 15.8378L27.4384 6.26084C28.1103 5.94204 28.8897 5.94204 29.5616 6.26084L49.8303 15.8378C50.3013 16.0594 50.6904 16.4238 50.9424 16.8796C51.194 17.335 51.2955 17.8586 51.2326 18.3752L51.2313 18.3741Z"
+                  fill="#88E900" />
+                <path
+                  d="M23.3698 20.8093C23.4934 20.8861 23.6053 20.9807 23.7025 21.0891C23.8135 21.2643 23.8799 21.4643 23.8955 21.6716C24.0651 22.8401 24.5396 23.9435 25.2713 24.8705C25.8057 25.525 26.5084 26.0216 27.3039 26.3066C27.6187 26.419 27.9475 26.4888 28.2811 26.5135C28.3518 26.5205 28.4207 26.5222 28.4919 26.5239C28.5626 26.5222 28.6315 26.5205 28.7009 26.5135H28.7005C29.034 26.4888 29.3628 26.419 29.6777 26.3066C30.4732 26.0217 31.1758 25.525 31.7102 24.8705C32.4428 23.944 32.9178 22.8406 33.0878 21.6716C33.1021 21.4643 33.1676 21.2643 33.279 21.0891C33.3762 20.9807 33.4881 20.8865 33.6117 20.8093C34.1634 20.396 34.5226 19.7762 34.6067 19.0922C34.6618 18.6406 34.4545 18.0477 33.9995 18.0495V18.049C34.2597 16.946 34.2922 15.8014 34.0949 14.6854C33.7401 13.3304 32.8106 12.1979 31.551 11.5854C30.6003 11.1278 29.5394 10.9509 28.4919 11.0754C27.4435 10.9509 26.3817 11.1278 25.4306 11.5854C24.171 12.1979 23.2415 13.3304 22.8867 14.6854C22.6902 15.8014 22.7228 16.946 22.9821 18.049C22.5271 18.0473 22.3198 18.6402 22.3749 19.0917V19.0922C22.459 19.7762 22.8182 20.396 23.3699 20.8093H23.3698ZM30.8869 16.4025C31.3471 16.4034 31.7617 16.681 31.9374 17.1065C32.113 17.532 32.0154 18.0212 31.6897 18.3465C31.364 18.6718 30.8743 18.769 30.4492 18.5924C30.0241 18.4164 29.747 18.0013 29.747 17.5411C29.747 17.2387 29.8671 16.949 30.081 16.7356C30.2948 16.5218 30.5845 16.4021 30.8868 16.4025L30.8869 16.4025ZM28.4918 20.703C29.4352 20.7025 30.3123 21.1883 30.8127 21.9881C30.3122 22.7879 29.4352 23.2737 28.4918 23.2737C27.5484 23.2737 26.6713 22.7879 26.1705 21.9881C26.6706 21.1879 27.548 20.7021 28.4918 20.703ZM26.0963 16.4025C26.5565 16.4034 26.9711 16.681 27.1468 17.1065C27.3225 17.532 27.2244 18.0212 26.8987 18.3465C26.573 18.6718 26.0837 18.769 25.6586 18.5924C25.2331 18.4164 24.956 18.0013 24.956 17.5411C24.9564 17.2387 25.0766 16.949 25.2904 16.7356C25.5042 16.5218 25.794 16.4021 26.0963 16.4025L26.0963 16.4025Z"
+                  fill="#88E900" />
+                <path
+                  d="M39.9667 30.637C38.9132 28.9462 34.7016 28.0874 34.7016 28.0874H34.7012C33.9924 27.94 33.2959 27.7361 32.6192 27.4785L29.8146 32.041L29.5314 29.7574L29.5318 29.7569C29.7999 29.6273 29.9703 29.3557 29.9708 29.0578V28.8791C29.9708 28.673 29.8888 28.4752 29.7431 28.3299C29.5973 28.1846 29.3995 28.1031 29.1935 28.1035H27.809C27.603 28.1031 27.4052 28.1846 27.2595 28.3299C27.1137 28.4752 27.0317 28.673 27.0317 28.8791V29.0578C27.0322 29.3562 27.2035 29.6277 27.4729 29.7569L27.1879 32.0405L24.3833 27.478V27.4785C23.7071 27.7357 23.0115 27.9395 22.3032 28.0874C22.3032 28.0874 18.0894 28.9462 17.0362 30.637C17.0362 30.637 16.2021 31.3418 16.2021 33.5703V36.3428C16.2021 36.9054 16.4255 37.4449 16.8233 37.8427C17.221 38.2404 17.7606 38.4638 18.3232 38.4638H38.6807C39.2428 38.4634 39.7819 38.2396 40.1792 37.8423C40.5765 37.4445 40.7999 36.905 40.7999 36.3428V33.4697C40.7752 31.3202 39.9663 30.637 39.9663 30.637L39.9667 30.637Z"
+                  fill="#88E900" />
+              </svg>
+            </div>
+            <div class="insurance__item__title">
+              <h3>
+                <span>Theft cover</span>
+                <img src="/assets/images/info-icon.svg" alt="info icon" class="icon-20px vertical-align-middle ms-2" />
+              </h3>
+            </div>
+            <div class="insurance__item__list">
+              <ul>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>Insure against theft</div>
+                </li>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>
+                    Insurance premium <span class="red-text">0.5%</span> of
+                    floor price monthly
+                  </div>
+                </li>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>
+                    Claim up to <span class="red-text">90%</span> of current
+                    floor price value
+                  </div>
+                </li>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>
+                    Only takes <span class="red-text">48hrs</span> to
+                    <span class="red-text">72hrs</span> to finalize claim
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <button type="button" class="btn btn-block green-btn fw-bold mt-4 add-btn">
+              ADD
+            </button>
+
+            <div class="status-text">Selected</div>
+          </div>
+
+          <!-- Rug pulls cover -->
+          <div class="insurance__item">
+            <div class="icon">
+              <svg width="54" height="57" viewBox="0 0 54 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M47.7384 28.5253C46.7744 32.5782 43.1468 36.5382 38.6121 36.5382C38.3896 36.5382 38.1662 36.5281 37.9402 36.5093L38.1811 33.6934C41.8113 34.0021 44.3872 30.4035 44.9899 27.8709C45.3706 26.2718 44.8686 24.5618 43.7683 23.7125C42.5804 22.7936 41.1367 23.2368 40.1355 23.7708L38.8079 21.2759C41.2288 19.9882 43.6654 20.0622 45.4966 21.4756C47.4768 23.0064 48.3783 25.839 47.7383 28.5253M45.7747 39.8245C44.8948 41.284 44.0048 42.7618 43.2304 44.3343L31.0992 39.9424C31.4158 36.6166 31.3392 32.8576 31.2538 28.8522C31.2117 26.8596 31.1675 24.8001 31.1675 22.6855C31.1675 20.0242 30.8972 17.7321 30.4417 15.7388C33.1884 14.7555 41.1246 12.2593 46.6959 10.5418C49.5596 14.0573 51.1724 18.5512 51.1724 23.5095C51.1724 30.8737 48.4287 35.4233 45.7744 39.8243M19.8523 37.8844C19.1511 37.8844 18.5812 37.3158 18.5812 36.6142C18.5812 35.9125 19.1511 35.3435 19.8523 35.3435C20.5545 35.3435 21.1225 35.9125 21.1225 36.6142C21.1225 37.3159 20.5545 37.8844 19.8523 37.8844ZM19.8523 42.7414C19.1511 42.7414 18.5812 42.1724 18.5812 41.4707C18.5812 40.769 19.1511 40.2005 19.8523 40.2005C20.5545 40.2005 21.1225 40.769 21.1225 41.4707C21.1225 42.1724 20.5545 42.7414 19.8523 42.7414ZM14.8972 29.5482C11.83 29.5482 12.0248 22.2042 14.8972 22.2042C16.3908 22.2042 17.6019 23.8481 17.6019 25.876C17.6019 27.9035 16.3913 29.5478 14.8972 29.5482ZM15.1171 37.8844C14.415 37.8844 13.8465 37.3158 13.8465 36.6142C13.8465 35.9125 14.415 35.3435 15.1171 35.3435C15.8188 35.3435 16.3873 35.9125 16.3873 36.6142C16.3873 37.3159 15.8188 37.8844 15.1171 37.8844ZM15.1171 42.7414C14.415 42.7414 13.8465 42.1724 13.8465 41.4707C13.8465 40.769 14.415 40.2005 15.1171 40.2005C15.8188 40.2005 16.3873 40.769 16.3873 41.4707C16.3873 42.1724 15.8188 42.7414 15.1171 42.7414ZM15.1171 47.5979C14.415 47.5979 13.8465 47.0289 13.8465 46.3277C13.8465 45.6256 14.415 45.057 15.1171 45.057C15.8188 45.057 16.3873 45.6256 16.3873 46.3277C16.3873 47.0289 15.8188 47.5979 15.1171 47.5979ZM39.0769 1.78307C33.3565 -0.35568 27.3179 -0.553252 21.7798 1.09803C22.9317 1.62758 24.1652 2.31351 25.2664 3.17769C29.4559 2.45191 33.8653 2.85137 38.0872 4.42994C40.523 5.34012 42.6735 6.64752 44.4983 8.26117C36.2249 10.8034 31.886 12.1515 29.6491 13.0249C27.7477 7.83104 24.4192 5.29894 21.7479 4.07113C21.7763 4.06193 21.8039 4.05055 21.832 4.04091C21.2034 3.72336 20.4487 3.38302 19.5815 3.0519C19.4637 3.03306 17.2671 2.72865 14.3505 4.69661C14.2865 4.74303 14.2147 4.78377 14.1512 4.83107C14.1293 4.84684 14.1057 4.86567 14.0838 4.881C6.69423 10.3779 3.88349 20.0106 1.38626 28.5739C0.955257 30.0508 0.548353 31.4454 0.12391 32.8037C-0.112177 33.4857 -0.00705712 34.2417 0.406419 34.8352C0.829089 35.4396 1.52114 35.8001 2.25834 35.8001H4.82857C7.06285 35.8001 8.87923 37.6169 8.87923 39.8508V47.0953C8.87923 50.8254 11.8419 53.5313 15.9227 53.5313H18.362C19.9187 53.5313 21.1858 54.7985 21.1858 56.3551H24.0114C24.0114 54.9689 23.5072 53.699 22.6755 52.7153C24.5545 52.1223 26.1055 51.2085 27.3394 49.9484C29.1352 48.1137 30.1413 45.6735 30.6959 42.7997L42.1151 46.9336C41.3954 48.9226 40.9316 51.0955 40.9316 53.5773V56.355H43.7571V53.5773C43.7571 48.6422 45.814 45.2315 48.1958 41.2834C50.9168 36.7728 53.9999 31.6596 53.9999 23.5087C53.9999 13.5485 48.2817 5.22384 39.0777 1.78148"
+                  fill="#88E900" />
+              </svg>
+            </div>
+            <div class="insurance__item__title">
+              <h3>
+                <span>Rug pulls cover</span>
+                <img src="/assets/images/info-icon.svg" alt="info icon" class="icon-20px vertical-align-middle ms-2" />
+              </h3>
+            </div>
+            <div class="insurance__item__list">
+              <ul>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>Insure against rug pulls</div>
+                </li>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>
+                    Insurance premium <span class="red-text">1%</span>, valid
+                    for newly launched projects
+                  </div>
+                </li>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>
+                    Claim up to <span class="red-text">100%</span> of mint
+                    price value
+                  </div>
+                </li>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>
+                    Only takes <span class="red-text">48hrs</span> to
+                    <span class="red-text">72hrs</span> to finalize claim
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <button type="button" class="btn btn-block green-btn fw-bold mt-4 add-btn">
+              ADD
+            </button>
+
+            <div class="status-text">Selected</div>
+          </div>
+
+          <!-- Heavy price drop cover -->
+          <div class="insurance__item">
+            <div class="icon">
+              <svg width="54" height="49" viewBox="0 0 54 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.65946 18.5901C2.83816 22.9969 0.000385045 30.2353 0.000385045 32.5429H0C0 34.7411 1.1728 36.7722 3.07651 37.8716C4.98012 38.9704 7.32583 38.9704 9.22954 37.8716C11.1332 36.7723 12.3061 34.7411 12.3061 32.5429C12.3061 30.2349 9.46789 22.9968 7.64698 18.5901H7.64659C7.48294 18.1935 7.16836 17.8782 6.77215 17.7141C6.37556 17.5497 5.93044 17.5497 5.53419 17.7141C5.1376 17.8782 4.82302 18.1935 4.65937 18.5901H4.65946Z"
+                  fill="#88E900" />
+                <path
+                  d="M28.6835 14.3459C28.6847 9.96713 26.6855 5.82791 23.2556 3.10675C19.8252 0.385292 15.3398 -0.620138 11.0761 0.376814C6.81287 1.37367 3.23808 4.26388 1.37025 8.22399C-0.497581 12.1842 -0.453717 16.7805 1.48884 20.7051C1.84885 19.7991 2.24545 18.8215 2.6782 17.7714C2.77023 17.5481 2.88343 17.334 3.01704 17.1326C2.23887 13.971 2.81798 10.6281 4.6142 7.91235C6.41007 5.19661 9.25977 3.35569 12.4733 2.83395C15.6872 2.3126 18.9729 3.15816 21.5354 5.16655C24.0982 7.17494 25.7046 10.1632 25.966 13.4088C26.2279 16.654 25.1209 19.861 22.913 22.254C20.7052 24.647 17.5974 26.0082 14.3415 26.0082C13.8175 26.0086 13.2938 25.9732 12.7744 25.9019C13.1572 26.9963 13.4529 27.9083 13.6801 28.6723C13.8999 28.6819 14.1194 28.6873 14.3412 28.6873L14.3416 28.6877C18.1439 28.6831 21.7891 27.1706 24.4777 24.4822C27.1664 21.7935 28.6785 18.1482 28.6831 14.3461L28.6835 14.3459Z"
+                  fill="#88E900" />
+                <path
+                  d="M13.9894 18.2897C13.1465 18.2873 12.3222 18.0421 11.6152 17.5831C11.4778 17.4907 11.3053 17.4672 11.1478 17.5192C10.9903 17.5712 10.8659 17.6928 10.8105 17.8492L10.3646 19.0924C10.2833 19.3189 10.3627 19.5722 10.5587 19.712C11.3445 20.2168 12.2425 20.5206 13.1735 20.5972V21.9661V21.9657C13.1735 22.1089 13.2297 22.246 13.331 22.3469C13.4318 22.4481 13.5689 22.5051 13.7118 22.5051H14.88C15.0229 22.5051 15.16 22.4482 15.2608 22.3469C15.3617 22.246 15.4183 22.1089 15.4179 21.9657V20.4706C16.2427 20.295 16.9824 19.8433 17.5156 19.1903C18.0489 18.5373 18.3439 17.7221 18.3516 16.8793C18.3516 14.5891 16.6358 13.5941 15.1403 12.9845C13.4565 12.288 13.1723 11.9226 13.1723 11.3674C13.1723 10.8549 13.5474 10.3085 14.6012 10.3085V10.3081C15.3309 10.3001 16.0483 10.4941 16.6743 10.8684C16.811 10.9462 16.975 10.9604 17.1232 10.9073C17.2711 10.8545 17.3885 10.7394 17.4436 10.5919L17.9087 9.36589C18.0012 9.12023 17.9034 8.84415 17.6773 8.71093C17.0193 8.33051 16.287 8.09678 15.5307 8.02517V6.72492C15.5304 6.42805 15.2897 6.18701 14.9924 6.18701H13.8403C13.5431 6.18701 13.3024 6.42805 13.3021 6.72492V8.16347C11.5851 8.61051 10.5005 9.91577 10.5005 11.59C10.5005 13.6843 12.2208 14.6415 13.8992 15.2995C15.4479 15.9264 15.66 16.4913 15.66 17.0092C15.66 17.7754 14.9892 18.2898 13.9893 18.2898L13.9894 18.2897Z"
+                  fill="#88E900" />
+                <path
+                  d="M21.2269 36.8653L53.0999 4.99126H53.0996C53.6375 4.44912 53.8462 3.66173 53.6475 2.92431C53.4492 2.18695 52.8731 1.61095 52.1358 1.41223C51.398 1.21355 50.611 1.42224 50.0684 1.96015L18.1944 33.8332L16.1105 31.7493V31.7489C15.839 31.4775 15.4309 31.3966 15.0763 31.5433C14.7216 31.6904 14.4902 32.0362 14.4902 32.4205V39.6196C14.4902 40.1441 14.9153 40.5691 15.4398 40.5691H22.6393C23.0232 40.5691 23.3694 40.3377 23.5161 39.9831C23.6631 39.6285 23.5819 39.2203 23.3104 38.9489L21.2269 36.8653Z"
+                  fill="#88E900" />
+                <path
+                  d="M51.4801 43.9469V9.64209L47.193 13.9292V43.9461H45.0491V16.0731L40.762 20.3602V43.9463H38.6096V22.513L34.3226 26.8V43.9465H32.1694V28.9528L27.8823 33.2415V43.9463H25.6348V48.2338H53.7276V43.9463L51.4801 43.9469Z"
+                  fill="#88E900" />
+              </svg>
+            </div>
+            <div class="insurance__item__title">
+              <h3>
+                <span>Heavy price drop cover</span>
+                <img src="/assets/images/info-icon.svg" alt="info icon" class="icon-20px vertical-align-middle ms-2" />
+              </h3>
+            </div>
+            <div class="insurance__item__list">
+              <ul>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>Insure against sudden price drops</div>
+                </li>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>
+                    Starting insurance premium
+                    <span class="red-text">0.8%</span> of floor price monthly
+                  </div>
+                </li>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>
+                    Claim up to <span class="red-text">50%</span> of insured
+                    floor price value
+                  </div>
+                </li>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>
+                    Only takes <span class="red-text">48hrs</span> to
+                    <span class="red-text">72hrs</span> to finalize claim
+                  </div>
+                </li>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>Your NFTs still remain yours (WAGMI)</div>
+                </li>
+              </ul>
+            </div>
+
+            <button type="button" class="btn btn-block green-btn fw-bold mt-4 add-btn">
+              ADD
+            </button>
+
+            <div class="status-text">Selected</div>
+          </div>
+
+          <!-- Theft (fixed) cover -->
+          <div class="insurance__item">
+            <div class="icon">
+              <svg width="57" height="59" viewBox="0 0 57 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M51.1121 4.3501H16.3121C16.0237 4.3501 15.747 4.46467 15.5431 4.66858C15.3392 4.87249 15.2246 5.14922 15.2246 5.4376V35.8876C15.2246 36.176 15.3392 36.4527 15.5431 36.6566C15.747 36.8605 16.0237 36.9751 16.3121 36.9751H51.1121C51.4005 36.9751 51.6772 36.8605 51.8811 36.6566C52.085 36.4527 52.1996 36.176 52.1996 35.8876V5.4376C52.1996 5.14922 52.085 4.87248 51.8811 4.66858C51.6772 4.46468 51.4005 4.3501 51.1121 4.3501ZM31.5371 21.7501C30.9366 21.7496 30.4501 21.2631 30.4496 20.6626V15.2251H36.9746V20.6626C36.9741 21.2631 36.4877 21.7496 35.8871 21.7501H31.5371ZM34.7996 23.9251V26.1001H32.6246V23.9251H34.7996ZM50.0246 34.8001H45.6746V31.5376C45.6732 30.0961 45.0993 28.714 44.0803 27.6944C43.0607 26.6754 41.6786 26.1016 40.2371 26.1001H36.9746V23.7246C37.6092 23.5013 38.1587 23.0872 38.5481 22.5386C38.9374 21.9904 39.1476 21.335 39.1496 20.6626V15.2251C40.3152 15.2251 41.3921 14.6032 41.9751 13.5938C42.5577 12.5845 42.5577 11.3407 41.9751 10.3313C41.392 9.32201 40.3153 8.7001 39.1496 8.7001H31.5371C30.6719 8.70107 29.8427 9.04528 29.231 9.65651C28.6197 10.2682 28.2755 11.0975 28.2745 11.9626V20.6626C28.2765 21.335 28.4867 21.9905 28.8761 22.5386C29.2654 23.0872 29.815 23.5013 30.4495 23.7247V26.1001H27.187C25.7456 26.1016 24.3634 26.6754 23.3439 27.6945C22.3248 28.714 21.751 30.0962 21.7495 31.5376V34.8001H17.3995V6.52513H50.0245L50.0246 34.8001Z"
+                  fill="#88E900" />
+                <path
+                  d="M44.5875 41.3249H22.8375C22.237 41.3249 21.75 40.838 21.75 40.2374C21.75 39.6369 22.237 39.1499 22.8375 39.1499H44.5875C45.1881 39.1499 45.675 39.6369 45.675 40.2374C45.675 40.838 45.1881 41.3249 44.5875 41.3249Z"
+                  fill="#88E900" />
+                <path
+                  d="M51.1121 45.675H16.3121C15.7116 45.675 15.2246 45.188 15.2246 44.5875C15.2246 43.987 15.7116 43.5 16.3121 43.5H51.1121C51.7127 43.5 52.1996 43.987 52.1996 44.5875C52.1996 45.188 51.7127 45.675 51.1121 45.675Z"
+                  fill="#88E900" />
+                <path
+                  d="M51.1125 0H16.3125C14.871 0.0014565 13.4889 0.575306 12.4693 1.59434C11.4503 2.61387 10.8765 3.99603 10.875 5.4375V47.85H1.0875C0.79912 47.85 0.522385 47.9646 0.318482 48.1685C0.114579 48.3724 0 48.6491 0 48.9375C0.00291301 51.5325 1.03506 54.0202 2.86976 55.8552C4.70496 57.6899 7.19254 58.722 9.7875 58.725H46.7625C49.3575 58.7221 51.8452 57.6899 53.6802 55.8552C55.5149 54.02 56.547 51.5325 56.55 48.9375V5.4375C56.5485 3.99603 55.9747 2.61385 54.9557 1.59434C53.9361 0.575294 52.554 0.00149143 51.1125 0ZM54.375 48.9375C54.375 51.6572 52.9238 54.1702 50.5688 55.53C48.2137 56.8898 45.3113 56.8898 42.9563 55.53C40.6012 54.1702 39.15 51.6572 39.15 48.9375C39.15 48.6491 39.0354 48.3724 38.8315 48.1685C38.6276 47.9646 38.3509 47.85 38.0625 47.85H13.05V5.4375C13.051 4.57236 13.3952 3.74311 14.0064 3.13138C14.6181 2.52014 15.4474 2.17593 16.3125 2.17496H51.1125C51.9777 2.17593 52.8069 2.52014 53.4187 3.13138C54.0299 3.7431 54.3741 4.57235 54.3751 5.4375L54.375 48.9375Z"
+                  fill="#88E900" />
+              </svg>
+            </div>
+            <div class="insurance__item__title">
+              <h3>
+                <span>Theft (fixed) cover</span>
+                <img src="/assets/images/info-icon.svg" alt="info icon" class="icon-20px vertical-align-middle ms-2" />
+              </h3>
+            </div>
+            <div class="insurance__item__list">
+              <ul>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>Insure against theft</div>
+                </li>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>
+                    Insurance premium <span class="red-text">0.5%</span> of
+                    floor price monthly
+                  </div>
+                </li>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>
+                    Claim up to <span class="red-text">90%</span> of current
+                    floor price value
+                  </div>
+                </li>
+                <li>
+                  <img src="/assets/images/check-light.svg" alt="checkmark icon" class="icon-20px" />
+                  <div>
+                    Only takes <span class="red-text">48hrs</span> to
+                    <span class="red-text">72hrs</span> to finalize claim
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <button type="button" class="btn btn-block green-btn fw-bold mt-4 add-btn">
+              ADD
+            </button>
+
+            <div class="status-text">Selected</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ******** Insurance Information ******** -->
+      <section class="insurance-information mt-5">
+        <!-- Left -->
+        <div class="insurance-cover-information">
+          <h3>Insurance cover information</h3>
+
+          <div class="cover-info-container">
+            <div class="insurance-cover-item">
+              <div class="status-text">Covers theft</div>
+              <div class="values">
+                <div class="value right-border">
+                  <div class="title">Premium %</div>
+                  <div class="fw-bold">0.5%</div>
+                  <div class="fw-bold green-text">0 ETH</div>
+                </div>
+                <div class="value">
+                  <div class="title">Claim %</div>
+                  <div class="fw-bold">90%</div>
+                  <div class="fw-bold green-text">0 ETH</div>
+                </div>
+              </div>
+              <div class="status smaller">Monthly</div>
+              <!-- remove button -->
+              <button class="remove-btn">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15.0001" cy="15" r="15" fill="white" />
+                  <path d="M19.5001 11.5L12.5001 18.5" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M12.5001 11.5L19.5001 18.5" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="insurance-cover-item">
+              <div class="status-text">Rug pulls covers</div>
+              <div class="values">
+                <div class="value right-border">
+                  <div class="title">Premium %</div>
+                  <div class="fw-bold">0.5%</div>
+                  <div class="fw-bold green-text">0 ETH</div>
+                </div>
+                <div class="value">
+                  <div class="title">Claim %</div>
+                  <div class="fw-bold">90%</div>
+                  <div class="fw-bold green-text">0 ETH</div>
+                </div>
+              </div>
+              <div class="status smaller">Monthly</div>
+              <!-- remove button -->
+              <button class="remove-btn">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15.0001" cy="15" r="15" fill="white" />
+                  <path d="M19.5001 11.5L12.5001 18.5" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M12.5001 11.5L19.5001 18.5" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="insurance-cover-item">
+              <div class="status-text">Covers rug pulls</div>
+              <div class="values">
+                <div class="value right-border">
+                  <div class="title">Premium %</div>
+                  <div class="fw-bold">0.5%</div>
+                  <div class="fw-bold green-text">0 ETH</div>
+                </div>
+                <div class="value">
+                  <div class="title">Claim %</div>
+                  <div class="fw-bold">90%</div>
+                  <div class="fw-bold green-text">0 ETH</div>
+                </div>
+              </div>
+              <div class="status smaller">Monthly</div>
+              <!-- remove button -->
+              <button class="remove-btn">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15.0001" cy="15" r="15" fill="white" />
+                  <path d="M19.5001 11.5L12.5001 18.5" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M12.5001 11.5L19.5001 18.5" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="total">
+            <div class="total__item">
+              <div class="fw-bold smaller uppercase">Total Premium</div>
+              <div class="total-value fw-bold green-text">0 ETH</div>
+            </div>
+            <div class="total__item">
+              <div class="fw-bold smaller uppercase">Total Insurance Value</div>
+              <div class="total-value fw-bold green-text">0 ETH</div>
+            </div>
+          </div>
+
+          <div class="continue-btn mt-5">
+            <a href="../terms/">
+              <button type="button" class="btn green-btn fw-bold btn-block">Continue</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="insurance-nft enter-amount__right">
+          <!-- Card -->
+          <div class="slider mb-3">
+            <div class="slider-item">
+              <div class="card-image">
+                <img src="/assets/images/lord-grip-3.png" alt="nft image" />
+              </div>
+              <div class="card-text">
+                <div>
+                  <p class="title fw-bold">Lord Frip #02</p>
+                  <p class="name red-text">Lord Frip</p>
+                </div>
+                <div>
+                  <span class="fw-bold solana-amount mb-2">
+                    <img src="/assets/images/solana.svg" alt="solana icon" class="solana-icon" />
+                    13.05
+                  </span>
+                  <span class="blue-chip"> Blue Chip </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- ----- Wallet Info - Sidebar ----- -->
+  <div class="wallet-sidebar" id="wallet-sidebar">
+    <div class="header">
+      <h3>
+        <span class="icon">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.1488 0.299316C9.74204 0.303955 6.47614 1.65925 4.06761 4.06809C1.65907 6.47694 0.303475 9.74274 0.298828 13.1493C0.299433 16.5573 1.65329 19.8255 4.06317 22.2351C6.47284 24.645 9.74091 25.9988 13.149 25.9995C13.39 25.9995 13.6308 25.9914 13.8718 25.9755V25.9753C17.1479 25.7877 20.2285 24.3552 22.4832 21.9709C24.7375 19.5864 25.9954 16.4305 25.9994 13.1494C25.9948 9.74265 24.6395 6.47675 22.2306 4.06821C19.8218 1.65967 16.556 0.304079 13.1495 0.299433L13.1488 0.299316ZM22.1603 19.0286C19.6831 16.8099 16.4748 15.5831 13.1488 15.5831C9.82279 15.5831 6.61503 16.8099 4.13731 19.0286C2.98389 17.2852 2.37203 15.2398 2.37848 13.1495C2.37848 10.2931 3.51331 7.55384 5.53297 5.53407C7.55278 3.51447 10.2922 2.37959 13.1484 2.37959C16.0045 2.37959 18.744 3.51441 20.7638 5.53407C22.7834 7.55389 23.9183 10.2933 23.9183 13.1495C23.9247 15.2397 23.3128 17.2851 22.1595 19.0286H22.1603Z"
+              fill="white" />
+            <path
+              d="M17.6629 9.32682C17.7065 10.5698 17.2561 11.7797 16.4104 12.6916C15.5646 13.6036 14.392 14.1437 13.1493 14.1938C11.9066 14.1438 10.734 13.6036 9.88814 12.6916C9.0425 11.7797 8.59213 10.5698 8.6357 9.32682C8.59234 8.0845 9.04289 6.87559 9.88892 5.96504C10.7348 5.05424 11.9071 4.516 13.1492 4.46777C14.3914 4.51597 15.5638 5.05424 16.4096 5.96504C17.2556 6.87564 17.7062 8.0845 17.6628 9.32682H17.6629Z"
+              fill="white" />
+          </svg>
+        </span>
+        <span class="text">My Wallet</span>
+      </h3>
+    </div>
+
+    <div class="body">
+      If you don't have a wallet yet, you can select a provider and create one now.
+      <div class="body__wallets">
+        <!-- WalletConnect -->
+        <a href="javascript:" class="wallet">
+          <img src="/assets/images/walletconnect.svg" alt="wallet connect icon"
+            class="icon-30px vertical-align-middle" />
+          <span>WalletConnect</span>
+        </a>
+        <!-- MetaMask -->
+        <a href="javascript:" class="wallet">
+          <img src="/assets/images/metamask.svg" alt="metamask icon" class="icon-30px vertical-align-middle" />
+          <span>MetaMask</span>
+        </a>
+        <!-- Coinbase Wallet -->
+        <a href="javascript:" class="wallet">
+          <img src="/assets/images/coinbase.svg" alt="coinbase icon" class="icon-30px vertical-align-middle" />
+          <span>Coinbase Wallet</span>
+        </a>
+        <!-- Phantom -->
+        <a href="javascript:" class="wallet">
+          <img src="/assets/images/phantom-icon.svg" alt="phantom icon" class="icon-30px vertical-align-middle" />
+          <span>Phantom</span>
+        </a>
+        <!-- Glow -->
+        <a href="javascript:" class="wallet">
+          <img src="/assets/images/glow.svg" alt="glow icon" class="icon-30px vertical-align-middle" />
+          <span>Glow</span>
+        </a>
+        <!-- Trust -->
+        <a href="javascript:" class="wallet">
+          <img src="/assets/images/trust.svg" alt="trust icon" class="icon-30px vertical-align-middle" />
+          <span>Trust</span>
+        </a>
+        <!-- More Options -->
+        <a href="javascript:" class="wallet">
+          <span class="red-text">More Options +</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- ----- Wallet Info - Sidebar ----- -->
+</body>
+
+</html>

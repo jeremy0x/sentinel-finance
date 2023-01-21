@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#100420" />
+
+  <!-- Primary Meta Tags -->
+  <title>Loan Summary | P2P Loans — SentFi</title>
+  <meta name="title" content="SentFi — The Anti-Scam and Anti-Rugpull Defi Platform" />
+  <meta name="description"
+    content="SentFI is a  platform, that protects web3 users from scams and supports personal and business loans, p2p commerce, NFT insurance & anti-rug pull for NFT investors." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sentfi.xyz/" />
+  <meta property="og:title" content="SentFi — The Anti-Scam and Anti-Rugpull Defi Platform" />
+  <meta property="og:description"
+    content="SentFI is a  platform, that protects web3 users from scams and supports personal and business loans, p2p commerce, NFT insurance & anti-rug pull for NFT investors." />
+  <meta property="og:image" content="https://i.ibb.co/nwQP5rY/image.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://sentfi.xyz/" />
+  <meta property="twitter:title" content="SentFi — The Anti-Scam and Anti-Rugpull Defi Platform" />
+  <meta property="twitter:description"
+    content="SentFI is a  platform, that protects web3 users from scams and supports personal and business loans, p2p commerce, NFT insurance & anti-rug pull for NFT investors." />
+  <meta property="twitter:image" content="https://i.ibb.co/nwQP5rY/image.png" />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/spacing.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/d778668bce.js" crossorigin="anonymous" defer></script>
+
+  <!-- Scripts -->
+  <script src="/assets/js/dropdown.js" defer></script>
+  <script src="/assets/js/tabSwitch.js" defer></script>
+  <script src="/assets/js/faviconChange.js" defer></script>
+  <script src="/assets/js/sidebar-toggle.js" defer></script>
+  <script src="/assets/js/wallet-sidebar-toggle.js" defer></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-56BGZFVWJM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-56BGZFVWJM');
+  </script>
+</head>
+
+<body class="page-with-sidebar">
+  <header>
+    <!-- navbar -->
+    <nav class="top-nav px-4">
+      <div class="header__logo">
+        <button class="hamburger" id="sidebar-toggle-btn" title="Toggle Sidebar">
+          &#9776;
+        </button>
+        <a href="/">
+          <img src="/assets/images/logo.svg" alt="SentFi logo" />
+        </a>
+      </div>
+      <div class="header__search relative">
+        <input type="text" placeholder="Search for collections" />
+        <button type="submit">
+          <img src="/assets/images/search.svg" alt="Search icon" />
+        </button>
+      </div>
+      <div class="header__cta relative">
+        <a title="Profile" href="#" class="dropdown-btn text-decoration-none mobile-hidden">
+          <img src="/assets/images/profile-icon-1.svg" alt="profile icon" class="profile-icon" />
+        </a>
+        <div class="navbar-dropdown-content profile-dropdown-content">
+          <a href="#">
+            <img src="/assets/images/profile-icon-1.svg" alt="profile icon" />
+            <span>Account</span>
+          </a>
+          <a href="#">
+            <img src="/assets/images/bell.svg" alt="notifications icon" />
+            <span>Notifications</span>
+            <span class="notification-count">1</span>
+          </a>
+          <a href="#">
+            <img src="/assets/images/inbox-icon.svg" alt="inbox icon" />
+            <span>Inbox</span>
+            <span class="notification-count">1</span>
+          </a>
+          <a href="#">
+            <img src="/assets/images/settings-icon.svg" alt="settings icon" />
+            <span>Settings</span>
+          </a>
+        </div>
+        <a title="Wallet" href="javascript:" class="text-decoration-none fw-bold relative mobile-hidden">
+          <img src="/assets/images/eth-1.svg" alt="ethereum icon" />
+          ETH
+          <i class="fa-solid fa-chevron-down fa-xs"></i>
+        </a>
+
+        <a title="Wallet" class="text-decoration-none pointer" id="toggle-btn">
+          <img src="/assets/images/wallet.svg" alt="wallet icon" /></a>
+      </div>
+    </nav>
+    <!-- navbar -->
+  </header>
+  <!-- sidebar -->
+  <aside class="sidebar px-4 py-5" id="sidebar">
+    <ul class="sidebar__items-container">
+      <!-- Sidebar Item -->
+      <li class="sidebar__item mt-0">
+        <button type="button" class="dropdown-btn">
+          <img src="/assets/images/box.svg" alt="box" class="sidebar__icon" />
+          Transactions
+          <i class="fa-solid fa-chevron-down fa-xs"></i>
+        </button>
+        <div class="dropdown">
+          <ul>
+            <li class="mb-3">
+              <a> Marketplace </a>
+            </li>
+            <li class="mb-3">
+              <a> Escrow </a>
+            </li>
+            <li>
+              <a> Orders </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <!-- Sidebar Item -->
+      <li class="sidebar__item">
+        <a href="javascript:" class="dropdown-btn">
+          <img src="/assets/images/rocket.svg" alt="box" class="sidebar__icon" />
+          Launch Mod
+          <i class="fa-solid fa-chevron-down fa-xs"></i>
+        </a>
+      </li>
+      <!-- Sidebar Item -->
+      <li class="sidebar__item">
+        <button type="button" class="dropdown-btn">
+          <img src="/assets/images/hand-cash.svg" alt="box" class="sidebar__icon" />
+          P2P Loans
+          <i class="fa-solid fa-chevron-down fa-xs active-chevron"></i>
+        </button>
+        <div class="dropdown active-dropdown">
+          <ul>
+            <li class="mb-3">
+              <a href="/p2p-loans/loan-listing/" class="sidebar__link">
+                Loan listing
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="#" class="sidebar__link green-text"> Loan summary </a>
+            </li>
+            <li>
+              <a href="/p2p-loans/funding-summary/" class="sidebar__link">
+                Funding summary
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <!-- Sidebar Item -->
+      <li class="sidebar__item">
+        <a href="/my-insurance/" class="dropdown-btn">
+          <img src="/assets/images/hand-safety.svg" alt="box" class="sidebar__icon" />
+          My Insurance
+          <i class="fa-solid fa-chevron-down fa-xs"></i>
+        </a>
+      </li>
+      <!-- Sidebar Item -->
+      <li class="sidebar__item">
+        <a href="javascript:" class="dropdown-btn">
+          <img src="/assets/images/piggy-deposit.svg" alt="box" class="sidebar__icon" />
+          P2P Exchange
+          <i class="fa-solid fa-chevron-down fa-xs"></i>
+        </a>
+      </li>
+      <!-- Sidebar Item -->
+      <li class="sidebar__item">
+        <a href="/my-deposit/" class="dropdown-btn">
+          <img src="/assets/images/exchange-icon.svg" alt="box" class="sidebar__icon" />
+          My Deposit
+          <i class="fa-solid fa-chevron-down fa-xs"></i>
+        </a>
+      </li>
+      <!-- Sidebar Item -->
+      <li class="sidebar__item">
+        <a href="javascript:" class="dropdown-btn">
+          <img src="/assets/images/hand-coin.svg" alt="box" class="sidebar__icon" />
+          Moderator
+          <i class="fa-solid fa-chevron-down fa-xs"></i>
+        </a>
+      </li>
+      <!-- Sidebar Item -->
+    </ul>
+    <!-- Sidebar CTA -->
+    <div class="sidebar__cta p-3">
+      <p class="pb-2">Connect with us on:</p>
+      <ul class="social-icons">
+        <li>
+          <a href="https://twitter.com/sent_fi" target="_blank" rel="noopener" class="px-3 py-2 my-3">
+            <img src="/assets/images/twitter.svg" alt="twitter" class="sidebar__icon" />
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/sent_FI" target="_blank" rel="noopener" class="px-3 py-2 my-3">
+            <img src="/assets/images/instagram.svg" alt="instagram" class="sidebar__icon" />
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://discord.gg/c2ZaCeGvYQ" target="_blank" rel="noopener" class="px-3 py-2 my-3">
+            <img src="/assets/images/discord.svg" alt="discord" class="sidebar__icon" />
+            Discord
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <!-- sidebar -->
+
+  <main class="page-with-table">
+    <section class="verified-collections loan-listing">
+      <div class="loan-summary-header mb-4 pb-2 px-2-5">
+        <div class="page-title fw-bold">My Loan Summary</div>
+        <div class="hero__cta">
+          <a href="../loan-listing/create-loan-listing/" class="create-loan-btn me-3">Create loan listing</a>
+          <a href="../loan-listing/get-instant-loan/" class="get-loan-btn">Get instant loan</a>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="loan-listing__header mb-3">
+        <a class="tab active" data-tab-value="#my-listing">
+          My listing <span class="notification-count hidden">1</span>
+        </a>
+        <a href="#" class="tab" data-tab-value="#instant-loan">
+          Instant loan
+        </a>
+        <a href="#" class="tab" data-tab-value="#activity"> Activity </a>
+      </div>
+
+      <!-- ********* My listing Tab ********* -->
+      <div class="table-container">
+        <table id="my-listing" data-tab-info class="active">
+          <thead>
+            <tr>
+              <th>NFT</th>
+              <th>APY</th>
+              <th>Funding Amount</th>
+              <th>LTF</th>
+              <th>Period</th>
+              <th>Return</th>
+              <th>Loan Status</th>
+              <th>Incoming Offers test</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table Row -->
+            <tr>
+              <td class="collection inline">
+                <img src="/assets/images/primate.webp" alt="lord-grip" width="45" />
+              </td>
+              <td>7300%</td>
+              <td class="inline">
+                <img src="/assets/images/eth.svg" alt="ethereum" class="solana-icon" />
+                <span>17.43</span>
+              </td>
+              <td>17.43</td>
+              <td>4 days</td>
+              <td class="inline">
+                <img src="/assets/images/solana.svg" alt="solana" class="solana-icon" />
+                <span>1.5 (4.5%)</span>
+              </td>
+              <td>Open Loan Request</td>
+              <td class="table__cta">
+                <button type="button" class="borrow-btn red-border white-text">
+                  View (<span class="num-of-offers">0</span>) offers
+                </button>
+              </td>
+              <td class="table__cta relative">
+                <button type="button" class="borrow-btn view-more-btn">
+                  <img src="/assets/images/trailing-dots.svg" alt="trailing-dots" />
+                </button>
+                <div class="drop-content">
+                  <ul>
+                    <li>
+                      <a href="#">View</a>
+                    </li>
+                    <hr />
+                    <li>
+                      <a href="#">Edit</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <!-- Table Row -->
+            <tr>
+              <td class="collection inline">
+                <img src="/assets/images/doodle-1.webp" alt="lord-grip" width="45" />
+              </td>
+              <td>7300%</td>
+              <td class="inline">
+                <img src="/assets/images/eth.svg" alt="ethereum" class="solana-icon" />
+                <span>17.43</span>
+              </td>
+              <td>17.43</td>
+              <td>4 days</td>
+              <td class="inline">
+                <img src="/assets/images/solana.svg" alt="solana" class="solana-icon" />
+                <span>1.5</span>
+              </td>
+              <td>Funded</td>
+              <td class="table__cta">
+                <button type="button" class="borrow-btn red-border white-text">
+                  View (<span class="num-of-offers">0</span>) offers
+                </button>
+              </td>
+              <td class="table__cta relative">
+                <button type="button" class="borrow-btn view-more-btn">
+                  <img src="/assets/images/trailing-dots.svg" alt="trailing-dots" />
+                </button>
+                <div class="drop-content">
+                  <ul>
+                    <li>
+                      <a href="#">View</a>
+                    </li>
+                    <hr />
+                    <li>
+                      <a href="#">Edit</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <!-- Table Row -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ********* Instant loan tab ********* -->
+      <div class="table-container">
+        <table id="instant-loan" data-tab-info>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>NFT</th>
+              <th>APY</th>
+              <th>Funding Amount</th>
+              <th>LTF</th>
+              <th>Period</th>
+              <th>Return</th>
+              <th>Loan Status</th>
+              <th>Date</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table Row -->
+            <tr>
+              <td>1</td>
+              <td class="collection inline">
+                <img src="/assets/images/primate.webp" alt="lord-grip" width="45" />
+              </td>
+              <td>7300%</td>
+              <td class="inline">
+                <img src="/assets/images/eth.svg" alt="ethereum" class="solana-icon" />
+                <span>17.43</span>
+              </td>
+              <td>17.43</td>
+              <td>4 days</td>
+              <td class="inline">
+                <img src="/assets/images/solana.svg" alt="solana" class="solana-icon" />
+                <span>1.5 (4.5%)</span>
+              </td>
+              <td>Funded</td>
+              <td>3 days</td>
+              <td class="table__cta">
+                <button type="button" class="borrow-btn red-border white-text">
+                  Repay loan
+                </button>
+              </td>
+              <td class="table__cta relative">
+                <button type="button" class="borrow-btn view-more-btn">
+                  View
+                </button>
+              </td>
+            </tr>
+            <!-- Table Row -->
+            <tr>
+              <td>2</td>
+              <td class="collection inline">
+                <img src="/assets/images/doodle-1.webp" alt="lord-grip" width="45" />
+              </td>
+              <td>7300%</td>
+              <td class="inline">
+                <img src="/assets/images/eth.svg" alt="ethereum" class="solana-icon" />
+                <span>17.43</span>
+              </td>
+              <td>17.43</td>
+              <td>4 days</td>
+              <td class="inline">
+                <img src="/assets/images/solana.svg" alt="solana" class="solana-icon" />
+                <span>1.5</span>
+              </td>
+              <td>Funded</td>
+              <td>3 days</td>
+              <td class="table__cta">
+                <button type="button" class="borrow-btn red-border white-text">
+                  Repay loan
+                </button>
+              </td>
+              <td class="table__cta relative">
+                <button type="button" class="borrow-btn view-more-btn">
+                  View
+                </button>
+              </td>
+            </tr>
+            <!-- Table Row -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ********* Activity Tab ********* -->
+      <div class="table-container">
+        <table id="activity" data-tab-info class="loan-summary__activity">
+          <thead>
+            <tr>
+              <th colspan="2">Item name</th>
+              <th>Event</th>
+              <th>From</th>
+              <th>To</th>
+              <th>Date</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table Row -->
+            <tr>
+              <td class="collection inline">
+                <img src="/assets/images/primate.webp" alt="lord-grip" width="45" />
+              </td>
+              <td>
+                <span class="name-muted">Primates</span> <br />
+                <span>Primates #1221 <span class="red-text">+3</span></span>
+              </td>
+              <td>Loan Funded</td>
+              <td>
+                <a href="#" class="red-text red-bottom-border">11sas2211as</a>
+              </td>
+              <td>
+                <a href="#" class="red-text red-bottom-border">11sas2211as</a>
+              </td>
+              <td class="inline">
+                <a href="https://example.com" class="red-text" target="_blank" rel="noopener">
+                  <span>3 days ago</span>
+                  <img src="/assets/images/external-link-red.svg" alt="external link icon" class="icon-20px" />
+                </a>
+              </td>
+              <td class="table__cta">
+                <button type="button" class="borrow-btn view-more-btn">
+                  View
+                </button>
+              </td>
+            </tr>
+            <!-- Table Row -->
+            <tr>
+              <td class="collection inline">
+                <img src="/assets/images/doodle-1.webp" alt="lord-grip" width="45" />
+              </td>
+              <td>
+                <span class="name-muted">Bored Ape</span> <br />
+                <span>Bored Ape #1221 <span class="red-text">+3</span></span>
+              </td>
+              <td>Loan Funded</td>
+              <td>
+                <a href="#" class="red-text red-bottom-border">11sas2211as</a>
+              </td>
+              <td>
+                <a href="#" class="red-text red-bottom-border">11sas2211as</a>
+              </td>
+              <td class="inline">
+                <a href="https://example.com" class="red-text" target="_blank" rel="noopener">
+                  <span>3 days ago</span>
+                  <img src="/assets/images/external-link-red.svg" alt="external link icon" class="icon-20px" />
+                </a>
+              </td>
+              <td class="table__cta">
+                <button type="button" class="borrow-btn view-more-btn">
+                  View
+                </button>
+              </td>
+            </tr>
+            <!-- Table Row -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ----- Wallet Info - Sidebar ----- -->
+    <div class="wallet-sidebar" id="wallet-sidebar">
+      <div class="header">
+        <h3>
+          <span class="icon">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.1488 0.299316C9.74204 0.303955 6.47614 1.65925 4.06761 4.06809C1.65907 6.47694 0.303475 9.74274 0.298828 13.1493C0.299433 16.5573 1.65329 19.8255 4.06317 22.2351C6.47284 24.645 9.74091 25.9988 13.149 25.9995C13.39 25.9995 13.6308 25.9914 13.8718 25.9755V25.9753C17.1479 25.7877 20.2285 24.3552 22.4832 21.9709C24.7375 19.5864 25.9954 16.4305 25.9994 13.1494C25.9948 9.74265 24.6395 6.47675 22.2306 4.06821C19.8218 1.65967 16.556 0.304079 13.1495 0.299433L13.1488 0.299316ZM22.1603 19.0286C19.6831 16.8099 16.4748 15.5831 13.1488 15.5831C9.82279 15.5831 6.61503 16.8099 4.13731 19.0286C2.98389 17.2852 2.37203 15.2398 2.37848 13.1495C2.37848 10.2931 3.51331 7.55384 5.53297 5.53407C7.55278 3.51447 10.2922 2.37959 13.1484 2.37959C16.0045 2.37959 18.744 3.51441 20.7638 5.53407C22.7834 7.55389 23.9183 10.2933 23.9183 13.1495C23.9247 15.2397 23.3128 17.2851 22.1595 19.0286H22.1603Z"
+                fill="white" />
+              <path
+                d="M17.6629 9.32682C17.7065 10.5698 17.2561 11.7797 16.4104 12.6916C15.5646 13.6036 14.392 14.1437 13.1493 14.1938C11.9066 14.1438 10.734 13.6036 9.88814 12.6916C9.0425 11.7797 8.59213 10.5698 8.6357 9.32682C8.59234 8.0845 9.04289 6.87559 9.88892 5.96504C10.7348 5.05424 11.9071 4.516 13.1492 4.46777C14.3914 4.51597 15.5638 5.05424 16.4096 5.96504C17.2556 6.87564 17.7062 8.0845 17.6628 9.32682H17.6629Z"
+                fill="white" />
+            </svg>
+          </span>
+          <span class="text">My Wallet</span>
+        </h3>
+      </div>
+
+      <div class="body">
+        If you don't have a wallet yet, you can select a provider and create one now.
+        <div class="body__wallets">
+          <!-- WalletConnect -->
+          <a href="javascript:" class="wallet">
+            <img src="/assets/images/walletconnect.svg" alt="wallet connect icon"
+              class="icon-30px vertical-align-middle" />
+            <span>WalletConnect</span>
+          </a>
+          <!-- MetaMask -->
+          <a href="javascript:" class="wallet">
+            <img src="/assets/images/metamask.svg" alt="metamask icon" class="icon-30px vertical-align-middle" />
+            <span>MetaMask</span>
+          </a>
+          <!-- Coinbase Wallet -->
+          <a href="javascript:" class="wallet">
+            <img src="/assets/images/coinbase.svg" alt="coinbase icon" class="icon-30px vertical-align-middle" />
+            <span>Coinbase Wallet</span>
+          </a>
+          <!-- Phantom -->
+          <a href="javascript:" class="wallet">
+            <img src="/assets/images/phantom-icon.svg" alt="phantom icon" class="icon-30px vertical-align-middle" />
+            <span>Phantom</span>
+          </a>
+          <!-- Glow -->
+          <a href="javascript:" class="wallet">
+            <img src="/assets/images/glow.svg" alt="glow icon" class="icon-30px vertical-align-middle" />
+            <span>Glow</span>
+          </a>
+          <!-- Trust -->
+          <a href="javascript:" class="wallet">
+            <img src="/assets/images/trust.svg" alt="trust icon" class="icon-30px vertical-align-middle" />
+            <span>Trust</span>
+          </a>
+          <!-- More Options -->
+          <a href="javascript:" class="wallet">
+            <span class="red-text">More Options +</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- ----- Wallet Info - Sidebar ----- -->
+
+  </main>
+</body>
+
+</html>
