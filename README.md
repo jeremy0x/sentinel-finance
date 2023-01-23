@@ -4,8 +4,8 @@
 </p>
 
 <p>
-    <a href="https://app.netlify.com/sites/sentfixyz-website/deploys">
-        <img src="https://api.netlify.com/api/v1/badges/29db6a47-a6a2-4c2b-9162-945c9f45c0a4/deploy-status" alt="Netlify Status"></a>
+    <a href="https://app.netlify.com/sites/sentfi/deploys">
+        <img src="https://api.netlify.com/api/v1/badges/1a1703e8-7b3e-46c1-9abb-3d2e38bdbed0/deploy-status" alt="Netlify Status"></a>
     <a href="https://sentfi.xyz">
         <img src="https://img.shields.io/badge/website-up-green"
             alt="Website Status"/></a>
