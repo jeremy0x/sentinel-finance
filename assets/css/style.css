@@ -1343,6 +1343,7 @@ img.footer-logo {
 @media (max-width: 1024px) {
   .sidebar {
     transform: translateX(-100%);
+    margin-top: 80px;
   }
 
   .hamburger {
